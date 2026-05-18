@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JSPixelcraft</title>
+
+<style>
+
+body {
+    margin: 0;
+    background: #0b0f19;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 24px;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.hero h1 {
+    font-size: 72px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #94a3b8;
+    font-size: 22px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    gap: 24px;
+}
+
+.card {
+    background: #151b2c;
+    border-radius: 28px;
+    padding: 28px;
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255,255,255,0.18);
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 32px;
+}
+
+.card p {
+    color: #b8c1d1;
+    line-height: 1.6;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 12px 18px;
+    border-radius: 14px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 100px;
+    color: #64748b;
+}
+
+.highlight {
+    color: #7dd3fc;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="hero">
+        <h1>JSPixelcraft</h1>
+
+        <p>
+            Indie apps with <span class="highlight">personality</span>.
+        </p>
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+            <h2>✈️ FlyBuddy</h2>
+
+            <p>
+                Your AI-powered flight companion for smarter travel,
+                airport navigation, timelines and less airport chaos.
+            </p>
+
+            <a class="button"
+               href="https://jspixelcraft.github.io/FlyBuddy-Support/marketing.html">
+               View App
+            </a>
+        </div>
+
+        <div class="card">
+            <h2>🚀 Coming Soon</h2>
+
+            <p>
+                More creative apps are currently in development.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Built by JSPixelcraft
+    </div>
+
+</div>
+
+</body>
+</html>
