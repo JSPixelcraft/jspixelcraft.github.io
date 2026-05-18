@@ -8,6 +8,10 @@
 
 <style>
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     background: #0b0f19;
@@ -65,6 +69,15 @@ body {
     border-color: rgba(255,255,255,0.18);
 }
 
+.app-logo {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 22px;
+    margin-bottom: 18px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+}
+
 .card h2 {
     margin-top: 0;
     font-size: 32px;
@@ -102,6 +115,18 @@ body {
     color: #7dd3fc;
 }
 
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+}
+
 </style>
 </head>
 
@@ -125,6 +150,8 @@ body {
 
         <div class="card">
 
+            <img src="logofly.png" class="app-logo">
+
             <h2>✈️ FlyBuddy</h2>
 
             <p>
@@ -141,21 +168,19 @@ body {
 
         <div class="card">
 
-           <div class="card">
+            <img src="logozeit.png" class="app-logo">
 
-    <h2>⏳ Zeitpilot</h2>
+            <h2>⏳ ZeitPilot</h2>
 
-    <p>
-        A focused time-travel inspired productivity experience
-        designed to help you stay present, organized and intentional.
-    </p>
+            <p>
+                A focused productivity experience designed for modern
+                work tracking, organization and stress-free time management.
+            </p>
 
-    <a class="button"
-       href="https://jspixelcraft.github.io/zeitpilot-support/marketing.html">
-       View App
-    </a>
-
-</div>
+            <a class="button"
+               href="https://jspixelcraft.github.io/zeitpilot-support/marketing.html">
+               View App
+            </a>
 
         </div>
 
