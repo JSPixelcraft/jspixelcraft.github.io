@@ -3,16 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>JSPixelcraft</title>
 
 <style>
-
-    .logo {
-    width: 120px;
-    height: 120px;
-    object-fit: contain;
-    margin-bottom: 20px;
-}
 
 body {
     margin: 0;
@@ -27,19 +21,29 @@ body {
     padding: 60px 24px;
 }
 
+.logo {
+    width: 260px;
+    max-width: 80%;
+    border-radius: 28px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.45);
+}
+
 .hero {
     text-align: center;
-    margin-bottom: 80px;
+    padding: 40px 0 80px;
 }
 
 .hero h1 {
     font-size: 72px;
+    margin-top: 30px;
     margin-bottom: 10px;
+    font-weight: 800;
 }
 
 .hero p {
     color: #94a3b8;
     font-size: 22px;
+    margin-top: 0;
 }
 
 .grid {
@@ -80,12 +84,18 @@ body {
     color: white;
     text-decoration: none;
     font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.button:hover {
+    background: #3b82f6;
 }
 
 .footer {
     text-align: center;
     margin-top: 100px;
     color: #64748b;
+    font-size: 14px;
 }
 
 .highlight {
@@ -100,18 +110,21 @@ body {
 <div class="container">
 
     <div class="hero">
-     <img src="logo.png" class="logo">
 
-<h1>JSPixelcraft</h1>
+        <img src="logo.png" class="logo">
+
+        <h1>JSPixelcraft</h1>
 
         <p>
             Indie apps with <span class="highlight">personality</span>.
         </p>
+
     </div>
 
     <div class="grid">
 
         <div class="card">
+
             <h2>✈️ FlyBuddy</h2>
 
             <p>
@@ -123,14 +136,17 @@ body {
                href="https://jspixelcraft.github.io/FlyBuddy-Support/marketing.html">
                View App
             </a>
+
         </div>
 
         <div class="card">
+
             <h2>🚀 Coming Soon</h2>
 
             <p>
                 More creative apps are currently in development.
             </p>
+
         </div>
 
     </div>
