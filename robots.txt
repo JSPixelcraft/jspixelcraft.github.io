@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jspixelcraft.github.io/sitemap.xml
