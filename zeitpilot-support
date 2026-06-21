@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ZeitPilot – Zeiterfassung Support</title>
+
+<style>
+
+body{
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial;
+background:#f5f5f7;
+margin:0;
+color:#1d1d1f;
+}
+
+.container{
+max-width:800px;
+margin:auto;
+padding:40px 20px;
+}
+
+h1{
+font-size:36px;
+margin-bottom:10px;
+}
+
+h2{
+margin-top:40px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:14px;
+box-shadow:0 4px 20px rgba(0,0,0,0.06);
+margin-top:20px;
+}
+
+a{
+color:#0071e3;
+text-decoration:none;
+}
+
+footer{
+margin-top:50px;
+font-size:14px;
+color:#6e6e73;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>ZeitPilot – Zeiterfassung Support</h1>
+<p>Supportseite für die App <b>ZeitPilot – Zeiterfassung</b>.</p>
+
+<div class="card">
+
+<h2>Kontakt</h2>
+
+<p>Bei Fragen, Problemen oder Feedback kontaktieren Sie uns gerne.</p>
+
+<p>
+Email: <a href="mailto:jspixelcraft@icloud.com">jspixelcraft@icloud.com</a>
+</p>
+
+
+</div>
+
+<div class="card">
+
+<h2>FAQ</h2>
+
+<p><b>Wie sichere ich meine Daten?</b></p>
+<p>ZeitPilot – Zeiterfassung erstellt verschlüsselte Backups. Diese können lokal oder in iCloud gespeichert werden.</p>
+
+<p><b>Kann ich meine Daten exportieren?</b></p>
+<p>Ja. ZeitPilot – Zeiterfassung unterstützt CSV-Export für Microsoft Excel und andere Programme.</p>
+
+<p><b>Werden meine Daten in einer Cloud gespeichert?</b></p>
+<p>Nein. Alle Daten werden lokal auf Ihrem Gerät gespeichert. Optional können verschlüsselte Backups in iCloud gespeichert werden.</p>
+
+</div>
+
+<div class="card">
+
+<h2>Datenschutz</h2>
+
+<p>ZeitPilot – Zeiterfassung speichert alle Daten lokal auf dem Gerät.</p>
+
+<p>Es werden keine persönlichen Daten an externe Server übertragen.</p>
+
+<p>Optionale iCloud-Backups werden verschlüsselt gespeichert und können nur mit Ihrem Passwort wiederhergestellt werden.</p>
+
+</div>
+
+<footer>
+
+© 2026 JSPixelCraft  
+ZeitPilot – Zeiterfassung Support
+
+</footer>
+
+</div>
+
+</body>
+</html>
