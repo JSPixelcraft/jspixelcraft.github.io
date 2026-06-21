@@ -1,171 +1,189 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>ScanBuddy</title>
-
-<style>
-*{box-sizing:border-box}
-
-body{
-    margin:0;
-    background:#0b0f19;
-    color:white;
-    font-family:-apple-system,BlinkMacSystemFont,sans-serif;
-}
-
-.container{
-    max-width:1100px;
-    margin:auto;
-    padding:60px 24px;
-}
-
-.hero{
-    text-align:center;
-    padding:50px 0 80px;
-}
-
-.logo{
-    width:150px;
-    border-radius:32px;
-    box-shadow:0 10px 40px rgba(0,0,0,.45);
-}
-
-h1{
-    font-size:64px;
-    margin:28px 0 12px;
-}
-
-.subtitle{
-    color:#94a3b8;
-    font-size:22px;
-    max-width:720px;
-    margin:auto;
-    line-height:1.5;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:24px;
-    margin-top:40px;
-}
-
-.card{
-    background:#151b2c;
-    border-radius:28px;
-    padding:28px;
-    border:1px solid rgba(255,255,255,.08);
-}
-
-.card h2{
-    margin-top:0;
-    font-size:26px;
-}
-
-.card p{
-    color:#b8c1d1;
-    line-height:1.6;
-}
-
-.actions{
-    margin-top:36px;
-    text-align:center;
-}
-
-.button{
-    display:inline-block;
-    margin:8px;
-    padding:13px 20px;
-    border-radius:14px;
-    background:#2563eb;
-    color:white;
-    text-decoration:none;
-    font-weight:600;
-}
-
-.button.secondary{
-    background:#1f2937;
-}
-
-.footer{
-    text-align:center;
-    margin-top:90px;
-    color:#64748b;
-    font-size:14px;
-}
-
-.footer a{
-    color:#7dd3fc;
-    text-decoration:none;
-}
-</style>
-</head>
-
 <body>
 
 <div class="container">
 
-    <section class="hero">
+    <div class="hero">
+
         <img src="logoscan.png" class="logo">
 
-        <h1>ScanBuddy</h1>
+        <div class="badge">
+            Smart PDF Scanner & Document Manager
+        </div>
 
-        <p class="subtitle">
-            Scan, edit, organize and manage PDF documents directly on your iPhone.
-            Clean scans, smart document handling and local OCR — without unnecessary data collection.
+        <h1>
+            ScanBuddy
+        </h1>
+
+        <p>
+            Scan, organize, edit and manage your documents with powerful
+            PDF tools, local OCR and intelligent automation.
+
+            <span class="highlight">
+                Built for iPhone users who want a smarter way to handle paperwork.
+            </span>
         </p>
 
-        <div class="actions">
-            <a class="button" href="scanbuddy-support.html">Support</a>
-            <a class="button secondary" href="privacy-scanbuddy.html">Privacy Policy</a>
-        </div>
-    </section>
+        <div class="hero-buttons">
 
-    <section class="grid">
+            <a class="btn btn-primary"
+               href="https://apps.apple.com/">
+               Get it now
+            </a>
 
-        <div class="card">
-            <h2>Smart Scanning</h2>
-            <p>
-                Capture documents quickly and create clean PDF files for everyday paperwork,
-                invoices, letters and personal records.
-            </p>
         </div>
 
-        <div class="card">
-            <h2>PDF Editing</h2>
-            <p>
-                Manage pages, rename documents, organize files and keep your scans structured
-                in one simple workflow.
-            </p>
+    </div>
+
+    <div class="section" id="features">
+
+        <h2 class="section-title">
+            Everything for your documents
+        </h2>
+
+        <p class="section-subtitle">
+            Scan, edit, organize and manage contracts, invoices,
+            letters and important documents in one place.
+        </p>
+
+        <div class="grid">
+
+            <div class="card">
+
+                <h2>📄 Intelligent Document Detection</h2>
+
+                <p>
+                    Automatically detects document edges and creates
+                    clean, professional scans in seconds.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>🧠 Smart Data Recognition</h2>
+
+                <p>
+                    Recognizes important information and helps organize
+                    documents automatically.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>✍️ Smart Text Editing</h2>
+
+                <p>
+                    Add, edit and position text directly inside
+                    your PDF documents with precision.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>🖊️ Signature Scanner</h2>
+
+                <p>
+                    Capture signatures and insert them into contracts,
+                    forms and important documents.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>📚 PDF Conversion</h2>
+
+                <p>
+                    Convert scans into PDF files and keep all your
+                    documents organized in one secure location.
+                </p>
+
+            </div>
+
+            <div class="card premium">
+
+                <h2>⏰ Contract Reminders</h2>
+
+                <p>
+                    Never miss cancellation periods or contract end dates.
+                    ScanBuddy keeps important deadlines in view.
+                </p>
+
+            </div>
+
         </div>
 
-        <div class="card">
-            <h2>Local OCR</h2>
-            <p>
-                Text recognition is processed locally using Apple technologies.
-                Your documents are not uploaded to external OCR servers.
-            </p>
+    </div>
+
+    <div class="showcase">
+
+        <h2>
+            Your digital document companion
+        </h2>
+
+        <p>
+            From receipts and invoices to contracts and personal records,
+            ScanBuddy helps you keep everything searchable, editable
+            and organized directly on your iPhone.
+        </p>
+
+    </div>
+
+    <div class="section">
+
+        <h2 class="section-title">
+            Why ScanBuddy?
+        </h2>
+
+        <p class="section-subtitle">
+            Powerful document tools combined with privacy-first design.
+        </p>
+
+        <div class="grid">
+
+            <div class="card">
+
+                <h2>🔒 Privacy First</h2>
+
+                <p>
+                    OCR and document processing happen locally on your device.
+                    Your documents stay under your control.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>⚡ Fast Workflow</h2>
+
+                <p>
+                    Scan, edit and export documents within seconds
+                    without complicated menus.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>📱 Built for iPhone</h2>
+
+                <p>
+                    Designed specifically for iOS with modern visuals,
+                    smooth performance and intuitive interactions.
+                </p>
+
+            </div>
+
         </div>
 
-        <div class="card">
-            <h2>Private by Design</h2>
-            <p>
-                ScanBuddy does not use advertising, analytics or tracking.
-                Your documents stay on your device.
-            </p>
-        </div>
-
-    </section>
+    </div>
 
     <div class="footer">
-        © by JSPixelcraft 2026<br><br>
-        <a href="index.html">Back to JSPixelcraft</a>
+        © 2026 ScanBuddy — Scan smarter. Organize better.
     </div>
 
 </div>
 
 </body>
-</html>
