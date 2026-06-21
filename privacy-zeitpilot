@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Datenschutzerklärung – ZeitPilot – Zeiterfassung</title>
+
+<style>
+body{
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+line-height:1.6;
+max-width:900px;
+margin:40px auto;
+padding:20px;
+color:#1d1d1f;
+background:#ffffff;
+}
+
+h1{
+font-size:32px;
+margin-bottom:10px;
+}
+
+h2{
+margin-top:30px;
+font-size:22px;
+}
+
+p{
+margin:10px 0;
+}
+
+.section{
+margin-top:25px;
+}
+
+footer{
+margin-top:40px;
+font-size:14px;
+color:#666;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Datenschutzerklärung</h1>
+
+<p>Diese Datenschutzerklärung gilt für die mobile Anwendung <strong>ZeitPilot – Zeiterfassung</strong>.</p>
+
+
+<div class="section">
+<h2>Verantwortlicher</h2>
+
+<p>
+Jan Thelen<br>
+jspixelcraft@icloud.com<br>
+Deutschland
+</p>
+
+</div>
+
+
+<div class="section">
+<h2>Datenspeicherung</h2>
+
+<p>
+Die App <strong>ZeitPilot – Zeiterfassung</strong> speichert alle Daten ausschließlich lokal auf dem Gerät des Nutzers.
+</p>
+
+<p>
+Es werden keine Daten an externe Server übertragen.
+</p>
+</div>
+
+
+<div class="section">
+<h2>Welche Daten verarbeitet werden</h2>
+
+<p>Die App kann folgende Informationen lokal speichern:</p>
+
+<ul>
+<li>Mitarbeitername</li>
+<li>Kontaktdaten</li>
+<li>Arbeitszeiten</li>
+<li>Abwesenheiten (z.B. Urlaub oder Krankheit)</li>
+<li>Arbeitscodes</li>
+<li>Berechnete Arbeitgeberkosten</li>
+</ul>
+
+<p>
+Diese Daten werden ausschließlich zur Nutzung der Funktionen der App verwendet.
+</p>
+</div>
+
+
+<div class="section">
+<h2>Keine Datenübertragung</h2>
+
+<p>Die App:ZeitPilot – Zeiterfassung</p>
+
+<ul>
+<li>sendet keine Daten an externe Server</li>
+<li>verwendet keine Analyse-Tools</li>
+<li>nutzt kein Tracking</li>
+<li>enthält keine Werbung</li>
+</ul>
+
+</div>
+
+
+<div class="section">
+<h2>PDF-Export</h2>
+
+<p>
+Beim Export von Arbeitszeitberichten als PDF wird das Dokument ausschließlich lokal auf dem Gerät erstellt.
+</p>
+
+<p>
+Der Nutzer entscheidet selbst, ob und wie dieses Dokument weitergegeben wird.
+</p>
+
+</div>
+
+
+<div class="section">
+<h2>Datenweitergabe</h2>
+
+<p>
+Es erfolgt keine Weitergabe personenbezogener Daten an Dritte.
+</p>
+</div>
+
+
+<div class="section">
+<h2>Änderungen dieser Datenschutzerklärung</h2>
+
+<p>
+Diese Datenschutzerklärung kann bei Bedarf aktualisiert werden.
+</p>
+</div>
+
+
+<div class="section">
+<h2>Kontakt</h2>
+
+<p>
+Bei Fragen zum Datenschutz wenden Sie sich bitte an:<br>
+jspixelcraft@icloud.com
+</p>
+
+</div>
+
+
+<footer>
+Stand: März 2026
+</footer>
+
+</body>
+</html>
