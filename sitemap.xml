@@ -1,19 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
     <loc>https://jspixelcraft.github.io/</loc>
+    <lastmod>2026-07-13</lastmod>
   </url>
-
   <url>
-    <loc>https://jspixelcraft.github.io/FlyBuddy-Support/marketing.html</loc>
+    <loc>https://jspixelcraft.github.io/flybuddy/</loc>
+    <lastmod>2026-07-13</lastmod>
   </url>
-
   <url>
-    <loc>https://jspixelcraft.github.io/zeitpilot-support/marketing.html</loc>
+    <loc>https://jspixelcraft.github.io/flybuddy/support.html</loc>
+    <lastmod>2026-07-13</lastmod>
   </url>
-
+  <url>
+    <loc>https://jspixelcraft.github.io/flybuddy/privacy.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://jspixelcraft.github.io/zeitpilot/</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://jspixelcraft.github.io/zeitpilot/support.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://jspixelcraft.github.io/zeitpilot/privacy.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://jspixelcraft.github.io/scanbuddy/</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://jspixelcraft.github.io/scanbuddy/support.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://jspixelcraft.github.io/scanbuddy/privacy.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://jspixelcraft.github.io/seniorenbuddy/</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://jspixelcraft.github.io/seniorenbuddy/support.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://jspixelcraft.github.io/seniorenbuddy/privacy.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
 </urlset>
-
-<!-- rebuild -->

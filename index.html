@@ -1,252 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="de">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>JSPixelcraft</title>
-
-<style>
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    background: #0b0f19;
-    color: white;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-}
-
-.container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 60px 24px;
-}
-
-.logo {
-    display: block;
-    width: 260px;
-    max-width: 80%;
-    margin: 0 auto;
-    border-radius: 28px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.45);
-}
-
-.hero {
-    text-align: center;
-    padding: 40px 0 80px;
-}
-
-.hero h1 {
-    font-size: 72px;
-    margin: 30px 0 10px;
-    font-weight: 800;
-    letter-spacing: -2px;
-}
-
-.hero p {
-    color: #94a3b8;
-    font-size: 22px;
-    margin: 0;
-}
-
-.highlight {
-    color: #7dd3fc;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 24px;
-}
-
-.card {
-    background: #151b2c;
-    border-radius: 28px;
-    padding: 28px;
-    border: 1px solid rgba(255,255,255,0.08);
-    transition: 0.25s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    border-color: rgba(255,255,255,0.18);
-}
-
-.app-logo {
-    width: 90px;
-    height: 90px;
-    object-fit: cover;
-    border-radius: 22px;
-    margin-bottom: 18px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.35);
-}
-
-.card h2 {
-    margin: 0 0 14px;
-    font-size: 32px;
-}
-
-.card p {
-    color: #b8c1d1;
-    line-height: 1.6;
-    margin: 0;
-}
-
-.button {
-    display: inline-block;
-    margin-top: 24px;
-    padding: 12px 18px;
-    border-radius: 14px;
-    background: #2563eb;
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.2s ease;
-}
-
-.button:hover {
-    background: #3b82f6;
-    transform: translateY(-2px);
-}
-
-.footer {
-    text-align: center;
-    margin-top: 100px;
-    color: #64748b;
-    font-size: 14px;
-}
-
-@media (max-width: 768px) {
-
-    .container {
-        padding: 40px 20px;
-    }
-
-    .hero {
-        padding: 30px 0 60px;
-    }
-
-    .hero h1 {
-        font-size: 52px;
-    }
-
-    .hero p {
-        font-size: 18px;
-    }
-
-    .logo {
-        width: 220px;
-    }
-
-}
-
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="JSPixelcraft entwickelt unabhängige iPhone Apps mit Fokus auf Klarheit, Datenschutz und Persönlichkeit.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#07101f">
+  <link rel="canonical" href="https://jspixelcraft.github.io/">
+  <title>JSPixelcraft – Independent iOS Apps</title>
+  <link rel="icon" href="logo.png">
+  <link rel="stylesheet" href="assets/site.css">
 </head>
-
-<body>
-
-<div class="container">
-
-    <div class="hero">
-
-        <img src="logo.png" class="logo" alt="JSPixelcraft Logo">
-
-        <h1>JSPixelcraft</h1>
-
-        <p>
-            Independent <span class="highlight">iOS apps</span>
-            built with personality.
-        </p>
-
+<body data-root="" data-app="JSPixelcraft" data-page="home" data-icon="logo.png" data-title-de="JSPixelcraft – Unabhängige iOS Apps" data-title-en="JSPixelcraft – Independent iOS Apps">
+  <main id="content">
+    <div class="container">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow" data-de="Unabhängig entwickelt" data-en="Independently built">Unabhängig entwickelt</p>
+          <h1>Apps mit <span class="gradient-text" data-de="Charakter." data-en="character.">Charakter.</span></h1>
+          <p data-de="JSPixelcraft entwickelt durchdachte iPhone Apps, die komplexe Dinge einfach machen – mit klarem Design, sinnvollen Funktionen und Respekt vor deinen Daten." data-en="JSPixelcraft creates thoughtful iPhone apps that make complex things simple—with clear design, useful features and respect for your data.">JSPixelcraft entwickelt durchdachte iPhone Apps, die komplexe Dinge einfach machen.</p>
+          <div class="actions">
+            <a class="button button-primary" href="#apps" data-de="Apps entdecken" data-en="Explore apps">Apps entdecken</a>
+          </div>
+        </div>
+        <div class="hero-art">
+          <img class="app-icon" src="logo.png" alt="JSPixelcraft Logo">
+        </div>
+      </section>
     </div>
 
-    <div class="grid">
-
-        <div class="card">
-
-            <img src="logofly.png" class="app-logo" alt="FlyBuddy Logo">
-
-            <h2>FlyBuddy</h2>
-
-            <p>
-                Your AI-powered flight companion for smarter travel,
-                airport navigation, timelines and less airport chaos.
-            </p>
-
-            <a class="button" href="flybuddy-marketing.html">
-                View App
-            </a>
-
+    <section class="section" id="apps">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow" data-de="Vier Apps, ein Anspruch" data-en="Four apps, one standard">Vier Apps, ein Anspruch</p>
+          <h2 data-de="Für Alltag, Arbeit und unterwegs." data-en="For life, work and travel.">Für Alltag, Arbeit und unterwegs.</h2>
+          <p data-de="Jede App löst ein konkretes Problem – ohne unnötige Komplexität." data-en="Each app solves a specific problem without unnecessary complexity.">Jede App löst ein konkretes Problem.</p>
         </div>
-
-        <div class="card">
-
-            <img src="logozeit.png" class="app-logo" alt="ZeitPilot Logo">
-
-            <h2>ZeitPilot</h2>
-
-            <p>
-                A focused productivity experience designed for modern
-                work tracking, organization and stress-free time management.
-            </p>
-
-            <a class="button" href="zeitpilot-marketing.html">
-                View App
-            </a>
-
+        <div class="grid grid-4">
+          <article class="card app-card">
+            <img class="mini-icon" src="logofly.png" alt="FlyBuddy App Icon">
+            <h3>FlyBuddy</h3>
+            <p data-de="Flüge verfolgen, Flughäfen verstehen und mit weniger Stress reisen." data-en="Track flights, understand airports and travel with less stress.">Flüge verfolgen und entspannter reisen.</p>
+            <a class="button button-secondary" href="flybuddy/" data-de="FlyBuddy öffnen" data-en="Open FlyBuddy">FlyBuddy öffnen</a>
+          </article>
+          <article class="card app-card">
+            <img class="mini-icon" src="logozeit.png" alt="ZeitPilot App Icon">
+            <h3>ZeitPilot</h3>
+            <p data-de="Arbeitszeiten, Teams und Berichte professionell organisieren." data-en="Organize working hours, teams and reports professionally.">Arbeitszeiten professionell organisieren.</p>
+            <a class="button button-secondary" href="zeitpilot/" data-de="ZeitPilot öffnen" data-en="Open ZeitPilot">ZeitPilot öffnen</a>
+          </article>
+          <article class="card app-card">
+            <img class="mini-icon" src="logoscan.png" alt="ScanBuddy App Icon">
+            <h3>ScanBuddy</h3>
+            <p data-de="Dokumente scannen, bearbeiten und sicher auf dem iPhone verwalten." data-en="Scan, edit and securely manage documents on iPhone.">Dokumente scannen und sicher verwalten.</p>
+            <a class="button button-secondary" href="scanbuddy/" data-de="ScanBuddy öffnen" data-en="Open ScanBuddy">ScanBuddy öffnen</a>
+          </article>
+          <article class="card app-card">
+            <img class="mini-icon" src="logosenioren.png" alt="SeniorenBuddy App Icon">
+            <h3>SeniorenBuddy</h3>
+            <p data-de="Medikamente, Termine und Hilfe gemeinsam oder selbstständig im Blick behalten." data-en="Keep medication, appointments and support organized independently or together.">Den Alltag sicher und übersichtlich organisieren.</p>
+            <a class="button button-secondary" href="seniorenbuddy/" data-de="SeniorenBuddy öffnen" data-en="Open SeniorenBuddy">SeniorenBuddy öffnen</a>
+          </article>
         </div>
+      </div>
+    </section>
 
-        <div class="card">
-
-            <img src="logoscan.png" class="app-logo" alt="ScanBuddy Logo">
-
-            <h2>ScanBuddy</h2>
-
-            <p>
-                Smart PDF scanner and document organizer with document
-                detection, PDF editing, OCR, page management and intelligent
-                document sorting.
-            </p>
-
-            <a class="button" href="scanbuddy-marketing.html">
-                View App
-            </a>
-
+    <section class="section-compact">
+      <div class="container">
+        <div class="banner">
+          <p class="eyebrow" data-de="Unsere Haltung" data-en="Our approach">Unsere Haltung</p>
+          <h2 data-de="Technik soll sich ruhig und selbstverständlich anfühlen." data-en="Technology should feel calm and effortless.">Technik soll sich ruhig und selbstverständlich anfühlen.</h2>
+          <p data-de="Wir entwickeln fokussierte Werkzeuge mit verständlicher Bedienung, transparenter Datenverarbeitung und persönlichem Support." data-en="We build focused tools with understandable interactions, transparent data handling and personal support.">Fokussierte Werkzeuge, transparente Datenverarbeitung und persönlicher Support.</p>
         </div>
-
-        <div class="card">
-
-            <img
-                src="logosenioren.png"
-                class="app-logo"
-                alt="SeniorenBuddy Logo"
-            >
-
-            <h2>SeniorenBuddy</h2>
-
-            <p>
-                Medication reminders, appointments, health records and support
-                in one place – for independent seniors and their families,
-                with an optional Apple Watch home-alert feature.
-            </p>
-
-            <a class="button" href="seniorenbuddy-marketing.html">
-                View App
-            </a>
-
-        </div>
-
-    </div>
-
-    <div class="footer">
-        © 2026 JSPixelcraft
-    </div>
-
-</div>
-
+      </div>
+    </section>
+  </main>
+  <script src="assets/site.js"></script>
 </body>
 </html>
