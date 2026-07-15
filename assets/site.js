@@ -5,16 +5,14 @@
   const app = body.dataset.app || "JSPixelcraft";
   const page = body.dataset.page || "home";
   const icon = body.dataset.icon || `${root}logo.png`;
+  const isAppPage = ["product", "support", "privacy"].includes(page);
 
   const labels = {
     de: { home: "Übersicht", product: "App", support: "Support", privacy: "Datenschutz", skip: "Zum Inhalt" },
     en: { home: "Overview", product: "App", support: "Support", privacy: "Privacy", skip: "Skip to content" }
   };
 
-  const saved = localStorage.getItem("jspixelcraft-language");
-  const initial = saved === "de" || saved === "en"
-    ? saved
-    : (navigator.language || "en").toLowerCase().startsWith("de") ? "de" : "en";
+  const initial = (navigator.language || "en").toLowerCase().startsWith("de") ? "de" : "en";
 
   function localizeElements(language) {
     document.querySelectorAll("[data-de][data-en]").forEach((element) => {
@@ -27,7 +25,6 @@
 
   function setLanguage(language) {
     html.lang = language;
-    localStorage.setItem("jspixelcraft-language", language);
     localizeElements(language);
     document.querySelectorAll("[data-language]").forEach((button) => {
       const active = button.dataset.language === language;
@@ -50,7 +47,7 @@
         <span>${app}</span>
       </a>
       <div class="nav-links">
-        ${page === "home" ? `<a href="#apps" data-de="Apps" data-en="Apps">Apps</a>` : `
+        ${page === "home" ? `<a href="#apps" data-de="Apps" data-en="Apps">Apps</a>` : page === "legal" ? `<a href="${root}index.html" data-de="Übersicht" data-en="Overview">Übersicht</a>` : `
           <a href="index.html" ${page === "product" ? 'aria-current="page"' : ""} data-de="App" data-en="App">App</a>
           <a href="support.html" ${page === "support" ? 'aria-current="page"' : ""} data-de="Support" data-en="Support">Support</a>
           <a href="privacy.html" ${page === "privacy" ? 'aria-current="page"' : ""} data-de="Datenschutz" data-en="Privacy">Privacy</a>`}
@@ -69,7 +66,8 @@
       <span>© 2026 JSPixelcraft</span>
       <div class="footer-links">
         <a href="${root}index.html" data-de="Alle Apps" data-en="All apps">All apps</a>
-        ${page !== "home" ? `<a href="support.html">Support</a><a href="privacy.html" data-de="Datenschutz" data-en="Privacy">Privacy</a>` : ""}
+        ${isAppPage ? `<a href="support.html">Support</a><a href="privacy.html" data-de="Datenschutz" data-en="Privacy">Privacy</a>` : ""}
+        <a href="${root}impressum.html" data-de="Impressum" data-en="Legal notice">Impressum</a>
         <a href="mailto:jspixelcraft@icloud.com" data-de="Kontakt" data-en="Contact">Contact</a>
       </div>
     </div>`;

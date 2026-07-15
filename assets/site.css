@@ -40,6 +40,7 @@ body[data-theme="flybuddy"] { --accent: #66d9ff; --accent-2: #4f83ff; }
 body[data-theme="zeitpilot"] { --accent: #7ce5ae; --accent-2: #3aa8ff; }
 body[data-theme="scanbuddy"] { --accent: #b89cff; --accent-2: #627dff; }
 body[data-theme="seniorenbuddy"] { --accent: #ffd27c; --accent-2: #ff8e7a; }
+body[data-theme="fahrtenbuchbuddy"] { --accent: #27e2b1; --accent-2: #1769ff; }
 
 a { color: inherit; }
 img { max-width: 100%; }
@@ -275,6 +276,7 @@ h1 {
 .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.grid-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
 
 .card {
   padding: 28px;
@@ -395,7 +397,7 @@ html[lang="en"] [data-lang-block="en"] { display: block; }
   .hero-art { order: -1; min-height: 260px; }
   .app-icon { width: 220px; }
   .actions { justify-content: center; }
-  .grid-3, .grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .grid-3, .grid-4, .grid-5 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .content-layout { grid-template-columns: 1fr; gap: 28px; }
   .aside-nav { position: static; grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
@@ -409,11 +411,12 @@ html[lang="en"] [data-lang-block="en"] { display: block; }
   .nav-links a { padding: 8px; font-size: 13px; }
   .container, .footer-inner { width: min(calc(100% - 28px), var(--content)); }
   .hero { gap: 28px; padding: 50px 0 70px; }
+  .hero .eyebrow::before { display: none; }
   .hero-art { min-height: 230px; }
   .app-icon { width: 190px; }
   h1 { font-size: clamp(3rem, 17vw, 4.7rem); }
   .section { padding: 70px 0; }
-  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .grid-2, .grid-3, .grid-4, .grid-5 { grid-template-columns: 1fr; }
   .app-card { min-height: 0; }
   .page-intro { padding: 62px 0 36px; }
   .aside-nav { display: none; }
