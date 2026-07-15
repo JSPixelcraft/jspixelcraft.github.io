@@ -66,7 +66,6 @@
     <div class="footer-inner">
       <span>© 2026 JSPixelcraft</span>
       <div class="footer-links">
-        <a href="${root}index.html" data-de="Alle Apps" data-en="All apps">All apps</a>
         ${isAppPage ? `<a href="support.html">Support</a><a href="privacy.html" data-de="Datenschutz" data-en="Privacy">Privacy</a>` : ""}
         <a href="${root}impressum.html" data-de="Impressum" data-en="Legal notice">Impressum</a>
         <a href="mailto:jspixelcraft@icloud.com" data-de="Kontakt" data-en="Contact">Contact</a>
