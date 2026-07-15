@@ -431,7 +431,6 @@ html[lang="en"] [data-lang-block="en"] { display: block; }
   .brand img { width: 36px; height: 36px; }
   .nav-links { gap: 0; }
   .nav-links a { padding: 8px; font-size: 13px; }
-  .all-apps-link span { display: none; }
   .container, .footer-inner { width: min(calc(100% - 28px), var(--content)); }
   .hero { gap: 28px; padding: 50px 0 70px; }
   .hero .eyebrow::before { display: none; }
