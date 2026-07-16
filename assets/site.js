@@ -12,7 +12,8 @@
     en: { home: "Overview", product: "App", support: "Support", privacy: "Privacy", skip: "Skip to content" }
   };
 
-  const initial = (navigator.language || "en").toLowerCase().startsWith("de") ? "de" : "en";
+  const isGermanOnly = body.dataset.languageMode === "de-only";
+  const initial = isGermanOnly || (navigator.language || "en").toLowerCase().startsWith("de") ? "de" : "en";
 
   function localizeElements(language) {
     document.querySelectorAll("[data-de][data-en]").forEach((element) => {
@@ -59,6 +60,7 @@
       </div>
     </nav>`;
   body.prepend(header);
+  if (isGermanOnly) header.querySelector(".language-switch")?.remove();
 
   const footer = document.createElement("footer");
   footer.className = "site-footer";
