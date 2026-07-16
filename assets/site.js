@@ -48,7 +48,7 @@
         <span>${app}</span>
       </a>
       <div class="nav-links">
-        ${page === "home" ? `<a href="#apps" data-de="Apps" data-en="Apps">Apps</a>` : page === "legal" ? `<a class="all-apps-link" href="${root}index.html" data-de-label="Zurück zur Hauptseite" data-en-label="Back to home" aria-label="Zurück zur Hauptseite">←</a>` : `
+        ${page === "home" ? `<a href="#apps" data-de="Apps" data-en="Apps">Apps</a><a href="#entwicklung" data-de="Entwicklung" data-en="Development">Entwicklung</a>` : page === "legal" ? `<a class="all-apps-link" href="${root}index.html" data-de-label="Zurück zur Hauptseite" data-en-label="Back to home" aria-label="Zurück zur Hauptseite">←</a>` : `
           <a class="all-apps-link" href="${root}index.html" data-de-label="Zurück zur Hauptseite" data-en-label="Back to home" aria-label="Zurück zur Hauptseite">←</a>
           <a href="index.html" ${page === "product" ? 'aria-current="page"' : ""} data-de="App" data-en="App">App</a>
           <a href="support.html" ${page === "support" ? 'aria-current="page"' : ""} data-de="Support" data-en="Support">Support</a>
