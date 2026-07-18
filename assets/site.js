@@ -74,8 +74,10 @@
       heroContainer.append(productFacts);
     }
 
-    document.querySelectorAll("#features .card-icon").forEach((element, index) => {
-      element.textContent = String(index + 1).padStart(2, "0");
+    ["#features", ".feature-ledger"].forEach((selector) => {
+      document.querySelectorAll(`${selector} .card-icon`).forEach((element, index) => {
+        element.textContent = String(index + 1).padStart(2, "0");
+      });
     });
   }
 
