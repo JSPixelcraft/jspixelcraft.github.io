@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+  <title id="title">JSPixelcraft</title>
+  <rect width="256" height="256" rx="54" fill="#f4f5f6"/>
+  <path d="M48 54h66v96c0 35-20 54-54 54H42v-34h15c15 0 21-7 21-23V88H48V54Z" fill="#0a0c0f"/>
+  <path d="M128 54h84v34h-48v23h19c25 0 41 17 41 44 0 31-19 49-53 49h-45v-34h43c12 0 18-5 18-15 0-8-5-12-15-12h-44V54Z" fill="#0a0c0f"/>
+  <circle cx="211" cy="53" r="13" fill="#2778ff"/>
+</svg>

@@ -62,6 +62,23 @@
   body.prepend(header);
   if (isGermanOnly) header.querySelector(".language-switch")?.remove();
 
+  if (page === "product") {
+    const heroContainer = document.querySelector(".hero")?.parentElement;
+    if (heroContainer) {
+      const productFacts = document.createElement("div");
+      productFacts.className = "product-facts";
+      productFacts.innerHTML = `
+        <div><span data-de="Plattform" data-en="Platform">Plattform</span><strong>iPhone / iPad</strong></div>
+        <div><span data-de="Entwicklung" data-en="Development">Entwicklung</span><strong data-de="Native für iOS" data-en="Native for iOS">Native für iOS</strong></div>
+        <div><span data-de="Datenschutz" data-en="Privacy">Datenschutz</span><strong data-de="Bewusst konzipiert" data-en="Built in by design">Bewusst konzipiert</strong></div>`;
+      heroContainer.append(productFacts);
+    }
+
+    document.querySelectorAll("#features .card-icon").forEach((element, index) => {
+      element.textContent = String(index + 1).padStart(2, "0");
+    });
+  }
+
   const footer = document.createElement("footer");
   footer.className = "site-footer";
   footer.innerHTML = `
