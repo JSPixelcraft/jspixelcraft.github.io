@@ -65,12 +65,17 @@
   if (page === "product") {
     const heroContainer = document.querySelector(".hero")?.parentElement;
     if (heroContainer) {
+      const platform = body.dataset.platform || "iPhone / iPad";
+      const developmentDe = body.dataset.developmentDe || "Native für iOS";
+      const developmentEn = body.dataset.developmentEn || "Native for iOS";
+      const privacyDe = body.dataset.privacyDe || "Bewusst konzipiert";
+      const privacyEn = body.dataset.privacyEn || "Built in by design";
       const productFacts = document.createElement("div");
       productFacts.className = "product-facts";
       productFacts.innerHTML = `
-        <div><span data-de="Plattform" data-en="Platform">Plattform</span><strong>iPhone / iPad</strong></div>
-        <div><span data-de="Entwicklung" data-en="Development">Entwicklung</span><strong data-de="Native für iOS" data-en="Native for iOS">Native für iOS</strong></div>
-        <div><span data-de="Datenschutz" data-en="Privacy">Datenschutz</span><strong data-de="Bewusst konzipiert" data-en="Built in by design">Bewusst konzipiert</strong></div>`;
+        <div><span data-de="Plattform" data-en="Platform">Plattform</span><strong>${platform}</strong></div>
+        <div><span data-de="Entwicklung" data-en="Development">Entwicklung</span><strong data-de="${developmentDe}" data-en="${developmentEn}">${developmentDe}</strong></div>
+        <div><span data-de="Datenschutz" data-en="Privacy">Datenschutz</span><strong data-de="${privacyDe}" data-en="${privacyEn}">${privacyDe}</strong></div>`;
       heroContainer.append(productFacts);
     }
 

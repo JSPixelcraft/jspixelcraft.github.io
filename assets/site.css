@@ -38,6 +38,7 @@ body[data-theme="zeitpilot"] { --accent: #7ce5ae; --accent-2: #3aa8ff; }
 body[data-theme="scanbuddy"] { --accent: #b89cff; --accent-2: #627dff; }
 body[data-theme="seniorenbuddy"] { --accent: #ffd27c; --accent-2: #ff8e7a; }
 body[data-theme="fahrtenbuchbuddy"] { --accent: #27e2b1; --accent-2: #1769ff; }
+body[data-theme="kassenanker"] { --accent: #a8cfff; --accent-2: #d8d5ce; }
 
 a { color: inherit; }
 img { max-width: 100%; }
@@ -271,7 +272,7 @@ h1 {
 .grid-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
 
 .apps-grid {
-  grid-template-columns: repeat(auto-fit, minmax(205px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .apps-grid .app-card {
@@ -346,24 +347,6 @@ h1 {
   letter-spacing: 0.08em;
   line-height: 1.2;
   text-transform: uppercase;
-}
-
-.app-card-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 14px;
-  margin-top: 14px;
-}
-
-.app-card-links a {
-  color: var(--muted);
-  font-size: 0.78rem;
-  font-weight: 650;
-  text-decoration: none;
-}
-
-.app-card-links a:hover {
-  color: var(--text);
 }
 
 .banner {
@@ -509,6 +492,9 @@ body[data-theme="fahrtenbuchbuddy"] .product-detail-section { padding-top: 100px
 body[data-theme="fahrtenbuchbuddy"] .feature-ledger { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 body[data-theme="fahrtenbuchbuddy"] .feature-ledger .card { min-height: 210px; }
 body[data-theme="fahrtenbuchbuddy"] .feature-ledger .card:nth-child(2) { border-right: 1px solid var(--line); }
+body[data-theme="kassenanker"] .feature-ledger { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+body[data-theme="kassenanker"] .feature-ledger .card { min-height: 210px; }
+body[data-theme="kassenanker"] .feature-ledger .card:nth-child(2) { border-right: 1px solid var(--line); }
 
 @media (max-width: 900px) {
   .proof-bar { grid-template-columns: repeat(2, 1fr); }
@@ -523,6 +509,8 @@ body[data-theme="fahrtenbuchbuddy"] .feature-ledger .card:nth-child(2) { border-
   body[data-page="product"] .banner > .actions { grid-column: 1; margin-top: 0 !important; }
   body[data-theme="fahrtenbuchbuddy"] .feature-ledger { grid-template-columns: 1fr; }
   body[data-theme="fahrtenbuchbuddy"] .feature-ledger .card:nth-child(2) { border-right: 0; }
+  body[data-theme="kassenanker"] .feature-ledger { grid-template-columns: 1fr; }
+  body[data-theme="kassenanker"] .feature-ledger .card:nth-child(2) { border-right: 0; }
 }
 
 @media (max-width: 1050px) {
@@ -534,7 +522,7 @@ body[data-theme="fahrtenbuchbuddy"] .feature-ledger .card:nth-child(2) { border-
   .app-icon { width: 220px; }
   .actions { justify-content: center; }
   .grid-3, .grid-4, .grid-5 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .apps-grid { grid-template-columns: repeat(auto-fit, minmax(205px, 1fr)); }
+  .apps-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .content-layout { grid-template-columns: 1fr; gap: 28px; }
   .aside-nav { position: static; grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
@@ -556,7 +544,7 @@ body[data-theme="fahrtenbuchbuddy"] .feature-ledger .card:nth-child(2) { border-
   h1 { font-size: clamp(3rem, 17vw, 4.7rem); }
   .section { padding: 70px 0; }
   .grid-2, .grid-3, .grid-4, .grid-5 { grid-template-columns: 1fr; }
-  .apps-grid { grid-template-columns: repeat(auto-fit, minmax(205px, 1fr)); }
+  .apps-grid { grid-template-columns: 1fr; }
   .app-card { min-height: 0; }
   .proof-bar { grid-template-columns: 1fr 1fr; }
   .proof-bar > div { min-height: 92px; padding: 16px; }
