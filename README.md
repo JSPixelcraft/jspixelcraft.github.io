@@ -10,6 +10,7 @@ Static bilingual website for JSPixelcraft and its iOS apps, hosted with GitHub P
 - `/zeitpilot/` – product, support and privacy
 - `/scanbuddy/` – product, support and privacy
 - `/seniorenbuddy/` – product, support and privacy
+- `/kassenanker/` – coming-soon page, support and privacy
 
 Each app directory contains:
 

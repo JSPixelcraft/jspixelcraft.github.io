@@ -325,6 +325,47 @@ h1 {
 .app-card .mini-icon { width: 74px; height: 74px; margin-bottom: 30px; border-radius: 22px; object-fit: cover; }
 .app-card .button { align-self: flex-start; margin-top: auto; padding-top: 9px; padding-bottom: 9px; min-height: 44px; }
 
+.app-card-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 10px;
+  margin-bottom: 10px;
+}
+
+.app-card-title h3 { margin-bottom: 0; }
+
+.availability-badge {
+  padding: 4px 8px;
+  border: 1px solid rgba(255, 210, 124, 0.32);
+  border-radius: 999px;
+  background: rgba(255, 210, 124, 0.08);
+  color: var(--warning);
+  font-size: 0.68rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.app-card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  margin-top: 14px;
+}
+
+.app-card-links a {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.app-card-links a:hover {
+  color: var(--text);
+}
+
 .banner {
   padding: clamp(32px, 6vw, 64px);
   border: 1px solid var(--line);
