@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="JSPixelcraft entwickelt moderne Apps, Websites und digitale Produkte – von Konzept und UI bis zur technischen Umsetzung und Veröffentlichung.">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#07101f">
+  <meta name="theme-color" content="#050b14">
   <link rel="canonical" href="https://www.jspixelcraft.com/">
   <meta property="og:title" content="App- &amp; Webentwicklung | JSPixelcraft">
   <meta property="og:description" content="JSPixelcraft entwickelt moderne Apps, Websites und digitale Produkte – von Konzept und UI bis zur technischen Umsetzung und Veröffentlichung.">
@@ -16,7 +16,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <title>App- &amp; Webentwicklung | JSPixelcraft</title>
   <link rel="icon" href="assets/mark.svg">
-  <link rel="stylesheet" href="assets/site.css?v=20260801-3">
+  <link rel="stylesheet" href="assets/site.css?v=20260808-2">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -42,121 +42,167 @@
   </script>
 </head>
 <body data-root="" data-app="JSPixelcraft" data-page="home" data-icon="assets/mark.svg" data-title-de="App- &amp; Webentwicklung | JSPixelcraft" data-title-en="App &amp; web development | JSPixelcraft">
-  <header class="site-header">
+  <header class="site-header home-header">
     <a class="skip-link" href="#content" data-de="Zum Inhalt" data-en="Skip to content">Zum Inhalt</a>
-    <nav class="nav" aria-label="Hauptnavigation">
-      <a class="brand" href="/" aria-label="JSPixelcraft"><img src="assets/mark.svg" width="256" height="256" alt=""><span>JSPixelcraft</span></a>
-      <div class="nav-links"><a href="#apps">Apps</a><a href="#entwicklung" data-de="Entwicklung" data-en="Development">Entwicklung</a></div>
+    <nav class="nav home-nav" aria-label="Hauptnavigation">
+      <a class="brand" href="/" aria-label="JSPixelcraft Startseite"><img src="assets/mark.svg" width="256" height="256" alt=""><span>JSPixelcraft</span></a>
+      <div class="nav-links home-nav-links">
+        <a href="/" aria-current="page">Home</a>
+        <a href="#apps">Apps</a>
+        <a href="#websites" data-de="Websites" data-en="Websites">Websites</a>
+        <a href="#apps" data-de="Projekte" data-en="Projects">Projekte</a>
+        <a href="#ablauf" data-de="Ablauf" data-en="Process">Ablauf</a>
+        <a href="#ueber-mich" data-de="Über mich" data-en="About">Über mich</a>
+        <a href="#kontakt" data-de="Kontakt" data-en="Contact">Kontakt</a>
+      </div>
       <div class="language-switch" aria-label="Sprache"><button type="button" data-language="de">DE</button><button type="button" data-language="en">EN</button></div>
+      <a class="button button-primary nav-cta" href="mailto:jspixelcraft@icloud.com?subject=Projektanfrage" data-de="Projekt anfragen" data-en="Start a project">Projekt anfragen</a>
     </nav>
   </header>
+
   <main id="content">
-    <div class="container">
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow" data-de="Independent App & Web Developer" data-en="Independent App & Web Developer">Independent App & Web Developer</p>
-          <h1><span data-de="Digitale Produkte," data-en="Digital products,">Digitale Produkte,</span> <span class="gradient-text" data-de="präzise entwickelt." data-en="precisely engineered.">präzise entwickelt.</span></h1>
-          <p data-de="JSPixelcraft konzipiert und entwickelt native Apps und moderne Websites – von der fokussierten Idee bis zur Veröffentlichung." data-en="JSPixelcraft designs and builds native apps and modern websites—from a focused idea through release.">JSPixelcraft konzipiert und entwickelt native Apps und moderne Websites.</p>
+    <section class="home-hero">
+      <div class="container home-hero-grid">
+        <div class="home-hero-copy">
+          <p class="eyebrow" data-de="Independent Digital Studio" data-en="Independent Digital Studio">Independent Digital Studio</p>
+          <h1><span data-de="Digitale Produkte," data-en="Digital products,">Digitale Produkte,</span><br><span data-de="die " data-en="built to ">die </span><span class="home-gradient" data-de="begeistern." data-en="inspire.">begeistern.</span></h1>
+          <p data-de="JSPixelcraft konzipiert und entwickelt native Apps und moderne Websites – von der Strategie bis zur Veröffentlichung." data-en="JSPixelcraft designs and develops native apps and modern websites—from strategy through release.">JSPixelcraft konzipiert und entwickelt native Apps und moderne Websites – von der Strategie bis zur Veröffentlichung.</p>
           <div class="actions">
-            <a class="button button-primary" href="#apps" data-de="Apps entdecken" data-en="Explore apps">Apps entdecken</a>
-            <a class="button button-secondary" href="#entwicklung" data-de="Projekt entwickeln lassen" data-en="Build your project">Projekt entwickeln lassen</a>
+            <a class="button button-primary" href="mailto:jspixelcraft@icloud.com?subject=Projektanfrage" data-de="Projekt anfragen" data-en="Start a project">Projekt anfragen <span aria-hidden="true">→</span></a>
+            <a class="button button-secondary" href="#apps" data-de="Meine Projekte ansehen" data-en="View my projects">Meine Projekte ansehen</a>
+          </div>
+          <div class="client-proof-placeholder" hidden aria-hidden="true">
+            <span data-de="Ausgewählte Kundenreferenzen nach Freigabe" data-en="Selected client references after approval">Ausgewählte Kundenreferenzen nach Freigabe</span>
           </div>
         </div>
-        <div class="hero-art studio-card">
-          <div class="studio-card-top"><span data-de="Independent Studio" data-en="Independent studio">Independent Studio</span><span class="status"><i></i><span data-de="Projektanfragen offen" data-en="Open for projects">Projektanfragen offen</span></span></div>
-          <div class="studio-mark"><img class="app-icon" src="assets/mark.svg" width="256" height="256" fetchpriority="high" alt="JSPixelcraft Logo"></div>
-          <div class="studio-card-bottom"><strong>Swift · SwiftUI · Web</strong><span data-de="Konzept, Design & Entwicklung aus einer Hand" data-en="Strategy, design & development in one place">Konzept, Design & Entwicklung aus einer Hand</span></div>
-        </div>
-      </section>
-      <div class="proof-bar" aria-label="Kompetenzen">
-        <div><strong>06</strong><span data-de="eigene App-Projekte" data-en="proprietary app projects">eigene App-Projekte</span></div>
-        <div><strong>App & Web</strong><span data-de="digital aus einer Hand" data-en="digital, in one place">digital aus einer Hand</span></div>
-        <div><strong>Direkt</strong><span data-de="ein Ansprechpartner" data-en="one point of contact">ein Ansprechpartner</span></div>
-        <div><strong>Privacy</strong><span data-de="bewusst konzipiert" data-en="built in by design">bewusst konzipiert</span></div>
-      </div>
-    </div>
 
-    <section class="section" id="apps">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow" data-de="Ausgewählte Produkte" data-en="Selected products">Ausgewählte Produkte</p>
-          <h2 data-de="Entwickelt für den echten Einsatz." data-en="Built for real-world use.">Entwickelt für den echten Einsatz.</h2>
-          <p data-de="Fünf veröffentlichte Produkte und ein weiteres Projekt in Entwicklung – mit klarer Aufgabe, eigenständiger Identität und einem gemeinsamen Qualitätsanspruch." data-en="Five released products and another project in development—with a clear purpose, a distinct identity and one shared standard of quality.">Fünf veröffentlichte Produkte und ein weiteres Projekt in Entwicklung.</p>
+        <div class="device-showcase" aria-label="FlyBuddy auf dem iPhone und ZeitPilot auf dem iPad">
+          <div class="device-glow device-glow-blue"></div>
+          <div class="device-glow device-glow-purple"></div>
+          <figure class="device device-tablet">
+            <div class="device-camera"></div>
+            <div class="device-screen"><img src="assets/zeitpilot-ipad.png" width="1400" height="973" fetchpriority="high" alt="ZeitPilot App auf einem iPad mit Mitarbeiterübersicht"></div>
+          </figure>
+          <figure class="device device-phone">
+            <div class="phone-island"></div>
+            <div class="device-screen"><img src="assets/flybuddy-iphone.png" width="416" height="900" fetchpriority="high" alt="FlyBuddy App auf einem iPhone mit Flugübersicht"></div>
+          </figure>
+          <div class="showcase-note">
+            <span data-de="Native Produkte" data-en="Native products">Native Produkte</span>
+            <strong>Swift · SwiftUI</strong>
+          </div>
+          <div class="device-stage-line"></div>
         </div>
-        <div class="grid grid-5 apps-grid">
-          <article class="card app-card">
-            <img class="mini-icon" src="logofahrtenbuch.png" width="512" height="512" loading="lazy" alt="Fahrtenbuch Buddy App Icon">
-            <h3>Fahrtenbuch Buddy</h3>
+      </div>
+
+      <div class="container capability-strip" aria-label="Leistungsversprechen">
+        <div><span class="strip-icon">◇</span><span data-de="Individuelle Lösungen" data-en="Custom solutions">Individuelle Lösungen</span></div>
+        <div><span class="strip-icon">⌘</span><span data-de="Moderne Technologien" data-en="Modern technologies">Moderne Technologien</span></div>
+        <div><span class="strip-icon">◉</span><span data-de="Hohe Performance" data-en="High performance">Hohe Performance</span></div>
+        <div><span class="strip-icon">◎</span><span data-de="Persönliche Betreuung" data-en="Personal support">Persönliche Betreuung</span></div>
+      </div>
+    </section>
+
+    <section class="home-section" id="apps">
+      <div class="container">
+        <div class="home-section-head">
+          <div><p class="eyebrow" data-de="Ausgewählte Projekte" data-en="Selected projects">Ausgewählte Projekte</p><h2 data-de="Entwickelt für den echten Einsatz." data-en="Built for real-world use.">Entwickelt für den echten Einsatz.</h2></div>
+          <a class="pill-link" href="#leistungen" data-de="Leistungen entdecken" data-en="Explore services">Leistungen entdecken</a>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-top"><img src="logofahrtenbuch.png" width="512" height="512" loading="lazy" alt="Fahrtenbuch Buddy App Icon"><div><h3>Fahrtenbuch Buddy</h3><span class="project-badge">iOS App · Bald</span></div></div>
             <p data-de="Fahrten automatisch, privat und nachvollziehbar dokumentieren." data-en="Document trips automatically, privately and transparently.">Fahrten automatisch, privat und nachvollziehbar dokumentieren.</p>
-            <a class="button button-secondary" href="fahrtenbuchbuddy/" data-de="Fahrtenbuch Buddy öffnen" data-en="Open Fahrtenbuch Buddy">Fahrtenbuch Buddy öffnen</a>
+            <a href="fahrtenbuchbuddy/" data-de="Fahrtenbuch Buddy ansehen" data-en="View Fahrtenbuch Buddy">Fahrtenbuch Buddy ansehen</a>
           </article>
-          <article class="card app-card">
-            <img class="mini-icon" src="logofly.png" width="512" height="512" loading="lazy" alt="FlyBuddy App Icon">
-            <h3>FlyBuddy</h3>
-            <p data-de="Fluginformationen prüfen, simulierte Routen ansehen und Flughäfen mit weniger Stress verstehen." data-en="Check flight information, view simulated routes and navigate airports with less stress.">Fluginformationen und simulierte Routen für entspannteres Reisen.</p>
-            <a class="button button-secondary" href="flybuddy/" data-de="FlyBuddy öffnen" data-en="Open FlyBuddy">FlyBuddy öffnen</a>
+          <article class="project-card">
+            <div class="project-top"><img src="logofly.png" width="512" height="512" loading="lazy" alt="FlyBuddy App Icon"><div><h3>FlyBuddy</h3><span class="project-badge">iOS App</span></div></div>
+            <p data-de="Fluginformationen, simulierte Routen und praktische Flughafenhilfe." data-en="Flight information, simulated routes and practical airport assistance.">Fluginformationen, simulierte Routen und praktische Flughafenhilfe.</p>
+            <a href="flybuddy/" data-de="FlyBuddy öffnen" data-en="Open FlyBuddy">FlyBuddy öffnen</a>
           </article>
-          <article class="card app-card">
-            <img class="mini-icon" src="logozeit.png" width="512" height="512" loading="lazy" alt="ZeitPilot App Icon">
-            <h3>ZeitPilot</h3>
-            <p data-de="Arbeitszeiten, Teams und Berichte professionell organisieren." data-en="Organize working hours, teams and reports professionally.">Arbeitszeiten professionell organisieren.</p>
-            <a class="button button-secondary" href="zeitpilot/" data-de="ZeitPilot öffnen" data-en="Open ZeitPilot">ZeitPilot öffnen</a>
+          <article class="project-card">
+            <div class="project-top"><img src="logozeit.png" width="512" height="512" loading="lazy" alt="ZeitPilot App Icon"><div><h3>ZeitPilot</h3><span class="project-badge">iOS App</span></div></div>
+            <p data-de="Arbeitszeiten, Teams und Berichte professionell organisieren." data-en="Organize working hours, teams and reports professionally.">Arbeitszeiten, Teams und Berichte professionell organisieren.</p>
+            <a href="zeitpilot/" data-de="ZeitPilot öffnen" data-en="Open ZeitPilot">ZeitPilot öffnen</a>
           </article>
-          <article class="card app-card">
-            <img class="mini-icon" src="logoscan.png" width="512" height="512" loading="lazy" alt="ScanBuddy App Icon">
-            <h3>ScanBuddy</h3>
-            <p data-de="Dokumente scannen, bearbeiten und sicher auf dem iPhone verwalten." data-en="Scan, edit and securely manage documents on iPhone.">Dokumente scannen und sicher verwalten.</p>
-            <a class="button button-secondary" href="scanbuddy/" data-de="ScanBuddy öffnen" data-en="Open ScanBuddy">ScanBuddy öffnen</a>
+          <article class="project-card">
+            <div class="project-top"><img src="logoscan.png" width="512" height="512" loading="lazy" alt="ScanBuddy App Icon"><div><h3>ScanBuddy</h3><span class="project-badge">iOS App</span></div></div>
+            <p data-de="Dokumente scannen, bearbeiten und sicher auf dem iPhone organisieren." data-en="Scan, edit and securely organize documents on iPhone.">Dokumente scannen, bearbeiten und sicher auf dem iPhone organisieren.</p>
+            <a href="scanbuddy/" data-de="ScanBuddy öffnen" data-en="Open ScanBuddy">ScanBuddy öffnen</a>
           </article>
-          <article class="card app-card">
-            <img class="mini-icon" src="logosenioren.png" width="512" height="512" loading="lazy" alt="SeniorenBuddy App Icon">
-            <h3>SeniorenBuddy</h3>
-            <p data-de="Medikamente, Termine und Hilfe gemeinsam oder selbstständig im Blick behalten." data-en="Keep medication, appointments and support organized independently or together.">Den Alltag sicher und übersichtlich organisieren.</p>
-            <a class="button button-secondary" href="seniorenbuddy/?v=20260718-3" data-de="SeniorenBuddy öffnen" data-en="Open SeniorenBuddy">SeniorenBuddy öffnen</a>
+          <article class="project-card">
+            <div class="project-top"><img src="logosenioren.png" width="512" height="512" loading="lazy" alt="SeniorenBuddy App Icon"><div><h3>SeniorenBuddy</h3><span class="project-badge project-badge-purple">iOS App</span></div></div>
+            <p data-de="Medikamente, Termine und Gesundheitsinformationen verständlich organisieren." data-en="Organize medication, appointments and health information clearly.">Medikamente, Termine und Gesundheitsinformationen verständlich organisieren.</p>
+            <a href="seniorenbuddy/" data-de="SeniorenBuddy öffnen" data-en="Open SeniorenBuddy">SeniorenBuddy öffnen</a>
           </article>
-          <article class="card app-card app-card-upcoming">
-            <img class="mini-icon" src="logokassenanker.png" width="512" height="512" loading="lazy" alt="KassenAnker App Icon">
-            <div class="app-card-title">
-              <h3>KassenAnker</h3>
-              <span class="availability-badge" data-de="Erscheint bald" data-en="Coming soon">Erscheint bald</span>
-            </div>
-            <p data-de="Ein digitales Kassenbuch für Mac und iPhone, das Buchungen, Belege und Abschlüsse übersichtlich zusammenführt." data-en="A digital cash book for Mac and iPhone that brings entries, receipts and closings together in one clear place.">Ein digitales Kassenbuch für Mac und iPhone, das Buchungen, Belege und Abschlüsse übersichtlich zusammenführt.</p>
-            <a class="button button-secondary" href="kassenanker/" data-de="KassenAnker ansehen" data-en="View KassenAnker">KassenAnker ansehen</a>
+          <article class="project-card">
+            <div class="project-top"><img src="logokassenanker.png" width="512" height="512" loading="lazy" alt="KassenAnker App Icon"><div><h3>KassenAnker</h3><span class="project-badge project-badge-gold">Mac + iPhone · Bald</span></div></div>
+            <p data-de="Buchungen, Belege und Abschlüsse übersichtlich zusammenführen." data-en="Bring entries, receipts and closings together clearly.">Buchungen, Belege und Abschlüsse übersichtlich zusammenführen.</p>
+            <a href="kassenanker/" data-de="KassenAnker ansehen" data-en="View KassenAnker">KassenAnker ansehen</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="entwicklung">
+    <section class="home-section services-section" id="leistungen">
+      <span id="websites" class="anchor-offset"></span>
       <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow" data-de="App- & Webentwicklung" data-en="App & web development">App- & Webentwicklung</p>
-          <h2 data-de="Von der Anforderung zum belastbaren digitalen Produkt." data-en="From requirements to a robust digital product.">Von der Anforderung zum belastbaren digitalen Produkt.</h2>
-          <p data-de="Du hast eine konkrete Idee, einen bestehenden Arbeitsablauf oder einen neuen Webauftritt im Kopf? JSPixelcraft entwickelt individuelle Apps und Websites nach deinen Zielen, Anforderungen und Inhalten – persönlich begleitet von der ersten Idee bis zur Veröffentlichung." data-en="Have a clear idea, an existing workflow or a new website in mind? JSPixelcraft develops custom apps and websites around your goals, requirements and content—with personal guidance from the first idea through release.">Individuelle Apps und Websites nach deinen Zielen und Anforderungen.</p>
-        </div>
-
-        <div class="grid grid-4">
-          <article class="card"><div class="card-icon">01</div><h3 data-de="Strategie & Scope" data-en="Strategy & scope">Strategie & Scope</h3><p data-de="Ziele, Zielgruppe und Kernfunktionen werden zu einem realistischen Produktplan verdichtet." data-en="Goals, audience and core features are shaped into a realistic product plan.">Von der Idee zu einem klaren, realistischen App-Konzept.</p></article>
-          <article class="card"><div class="card-icon">02</div><h3 data-de="UX & Interface" data-en="UX & interface">UX & Interface</h3><p data-de="Struktur, Nutzerführung und visuelle Sprache entstehen als konsistentes Gesamtsystem." data-en="Structure, user flows and visual language become one consistent system.">Durchdachtes Design mit verständlicher Bedienung.</p></article>
-          <article class="card"><div class="card-icon">03</div><h3 data-de="Native App-Entwicklung" data-en="Native app development">Native App-Entwicklung</h3><p data-de="Umsetzung mit Swift und SwiftUI, passend zum Apple-Ökosystem – einschließlich Tests und Begleitung bis zur Veröffentlichung." data-en="Implementation with Swift and SwiftUI for the Apple ecosystem—including testing and support through release.">Native Umsetzung für Apple-Plattformen.</p></article>
-          <article class="card"><div class="card-icon">04</div><h3 data-de="Webentwicklung" data-en="Web development">Webentwicklung</h3><p data-de="Individuelle Websites mit klarer Struktur, responsiver Darstellung und einer Gestaltung, die zu Marke und Inhalten passt." data-en="Custom websites with clear structure, responsive layouts and a design tailored to the brand and its content.">Individuelle Websites für Unternehmen, Projekte und Produkte.</p></article>
+        <div class="home-section-head"><div><p class="eyebrow" data-de="Was ich für dich tun kann" data-en="How I can help">Was ich für dich tun kann</p><h2 data-de="Von der Idee zum digitalen Produkt." data-en="From idea to digital product.">Von der Idee zum digitalen Produkt.</h2></div></div>
+        <div class="service-grid">
+          <article class="service-card"><span class="service-icon">▣</span><h3 data-de="iOS App-Entwicklung" data-en="iOS app development">iOS App-Entwicklung</h3><p data-de="Native Apps mit Swift und SwiftUI für iPhone und iPad." data-en="Native apps with Swift and SwiftUI for iPhone and iPad.">Native Apps mit Swift und SwiftUI für iPhone und iPad.</p><a href="mailto:jspixelcraft@icloud.com?subject=iOS%20App-Entwicklung" data-de="Projekt besprechen" data-en="Discuss your project">Projekt besprechen →</a></article>
+          <article class="service-card"><span class="service-icon">◎</span><h3 data-de="Webentwicklung" data-en="Web development">Webentwicklung</h3><p data-de="Moderne, schnelle Websites mit klarer Struktur und eigenständigem Design." data-en="Modern, fast websites with clear structure and distinctive design.">Moderne, schnelle Websites mit klarer Struktur und eigenständigem Design.</p><a href="mailto:jspixelcraft@icloud.com?subject=Webentwicklung" data-de="Website anfragen" data-en="Request a website">Website anfragen →</a></article>
+          <article class="service-card"><span class="service-icon">⌘</span><h3 data-de="UI/UX Design" data-en="UI/UX design">UI/UX Design</h3><p data-de="Intuitive Interfaces, verständliche Nutzerführung und konsistente Systeme." data-en="Intuitive interfaces, clear user flows and consistent systems.">Intuitive Interfaces, verständliche Nutzerführung und konsistente Systeme.</p><a href="#ablauf" data-de="Ablauf ansehen" data-en="View the process">Ablauf ansehen →</a></article>
+          <article class="service-card"><span class="service-icon">↗</span><h3 data-de="Von A bis Z" data-en="From A to Z">Von A bis Z</h3><p data-de="Strategie, Umsetzung, Tests und Veröffentlichung aus einer Hand." data-en="Strategy, implementation, testing and release in one place.">Strategie, Umsetzung, Tests und Veröffentlichung aus einer Hand.</p><a href="#ablauf" data-de="Prozess entdecken" data-en="Explore the process">Prozess entdecken →</a></article>
+          <article class="service-card"><span class="service-icon">◇</span><h3 data-de="Wartung &amp; Support" data-en="Maintenance &amp; support">Wartung &amp; Support</h3><p data-de="Langfristige Betreuung, Updates und technische Weiterentwicklung." data-en="Long-term support, updates and technical development.">Langfristige Betreuung, Updates und technische Weiterentwicklung.</p><a href="mailto:jspixelcraft@icloud.com?subject=Wartung%20und%20Support" data-de="Support anfragen" data-en="Request support">Support anfragen →</a></article>
         </div>
       </div>
     </section>
 
-    <section class="section-compact">
+    <section class="technology-section" aria-labelledby="technology-title">
       <div class="container">
-        <div class="banner">
-          <p class="eyebrow" data-de="Persönlich & transparent" data-en="Personal & transparent">Persönlich & transparent</p>
-          <h2 data-de="Lass uns über dein App- oder Webprojekt sprechen." data-en="Let’s talk about your app or web project.">Lass uns über dein App- oder Webprojekt sprechen.</h2>
-          <p data-de="Beschreibe kurz deine Idee, die wichtigsten Anforderungen und wer das digitale Produkt nutzen soll. Du erhältst eine persönliche Rückmeldung mit einer ersten Einschätzung zu Umfang und nächsten Schritten. Ein Angebot entsteht erst nach gemeinsamer Klärung der Anforderungen." data-en="Briefly describe your idea, the key requirements and who will use the digital product. You will receive a personal response with an initial assessment of scope and next steps. A proposal is prepared only after the requirements have been clarified together.">Erzähl kurz von deiner Idee – unverbindlich und ohne unnötige Umwege.</p>
-          <div class="actions" style="margin-top:24px"><a class="button button-primary" href="mailto:jspixelcraft@icloud.com?subject=Anfrage%20zur%20App-%20oder%20Webentwicklung" data-de="Projekt anfragen" data-en="Discuss your project">Projekt anfragen</a></div>
-        </div>
+        <p id="technology-title" data-de="Technologien für starke digitale Produkte" data-en="Technologies for strong digital products">Technologien für starke digitale Produkte</p>
+        <div class="technology-list" aria-label="Technologien"><span>Swift</span><span>SwiftUI</span><span>iOS</span><span>iPadOS</span><span>macOS</span><span>CloudKit</span><span>HTML · CSS · JavaScript</span></div>
       </div>
     </section>
 
+    <section class="home-section process-section" id="ablauf">
+      <div class="container process-layout">
+        <div class="process-copy"><p class="eyebrow" data-de="Klarer Ablauf" data-en="Clear process">Klarer Ablauf</p><h2 data-de="Fokussiert von der Idee bis zum Release." data-en="Focused from idea to release.">Fokussiert von der Idee bis zum Release.</h2><p data-de="Kurze Wege, klare Entscheidungen und ein direkter Ansprechpartner über den gesamten Projektverlauf." data-en="Short paths, clear decisions and one direct contact throughout the project.">Kurze Wege, klare Entscheidungen und ein direkter Ansprechpartner über den gesamten Projektverlauf.</p></div>
+        <ol class="process-list">
+          <li><span>01</span><div><h3 data-de="Ziele klären" data-en="Define goals">Ziele klären</h3><p data-de="Anforderungen, Zielgruppe und Umfang werden gemeinsam geschärft." data-en="Requirements, audience and scope are refined together.">Anforderungen, Zielgruppe und Umfang werden gemeinsam geschärft.</p></div></li>
+          <li><span>02</span><div><h3 data-de="Produkt gestalten" data-en="Design the product">Produkt gestalten</h3><p data-de="Struktur, Nutzerführung und visuelle Sprache entstehen als System." data-en="Structure, user flow and visual language become one system.">Struktur, Nutzerführung und visuelle Sprache entstehen als System.</p></div></li>
+          <li><span>03</span><div><h3 data-de="Sauber entwickeln" data-en="Build with care">Sauber entwickeln</h3><p data-de="Die technische Umsetzung erfolgt fokussiert, testbar und nachvollziehbar." data-en="Implementation stays focused, testable and transparent.">Die technische Umsetzung erfolgt fokussiert, testbar und nachvollziehbar.</p></div></li>
+          <li><span>04</span><div><h3 data-de="Veröffentlichen &amp; begleiten" data-en="Release &amp; support">Veröffentlichen &amp; begleiten</h3><p data-de="Launch, App-Store-Prozess und Weiterentwicklung werden begleitet." data-en="Launch, App Store process and continued development are supported.">Launch, App-Store-Prozess und Weiterentwicklung werden begleitet.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="about-strip" id="ueber-mich">
+      <div class="container about-grid">
+        <div><p class="eyebrow" data-de="Direkt &amp; persönlich" data-en="Direct &amp; personal">Direkt &amp; persönlich</p><h2 data-de="Ein Entwickler. Ein klarer Qualitätsanspruch." data-en="One developer. One clear standard of quality.">Ein Entwickler. Ein klarer Qualitätsanspruch.</h2></div>
+        <p data-de="JSPixelcraft steht für die persönliche Entwicklung digitaler Produkte ohne unnötige Übergaben. Von der ersten Idee bis zur Veröffentlichung bleibt die Verantwortung an einer Stelle." data-en="JSPixelcraft stands for personal product development without unnecessary handovers. From the first idea through release, responsibility stays in one place.">JSPixelcraft steht für die persönliche Entwicklung digitaler Produkte ohne unnötige Übergaben. Von der ersten Idee bis zur Veröffentlichung bleibt die Verantwortung an einer Stelle.</p>
+      </div>
+    </section>
+
+    <section class="home-cta-section" id="kontakt">
+      <div class="container">
+        <div class="home-cta">
+          <div><p class="eyebrow" data-de="Bereit für dein Projekt?" data-en="Ready for your project?">Bereit für dein Projekt?</p><h2 data-de="Lass uns gemeinsam etwas Großes entwickeln." data-en="Let’s build something remarkable together.">Lass uns gemeinsam etwas Großes entwickeln.</h2><p data-de="Ob App oder Website – ich begleite dich von der Idee bis zum erfolgreichen Launch." data-en="Whether app or website—I support you from the idea through a successful launch.">Ob App oder Website – ich begleite dich von der Idee bis zum erfolgreichen Launch.</p></div>
+          <div class="home-cta-actions"><a class="button button-primary" href="mailto:jspixelcraft@icloud.com?subject=Projektanfrage" data-de="Projekt anfragen" data-en="Start a project">Projekt anfragen</a><a class="button button-secondary" href="#ueber-mich" data-de="Über mich" data-en="About">Über mich</a></div>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="site-footer"><div class="footer-inner"><span>© 2026 JSPixelcraft</span><div class="footer-links"><a href="#apps">Apps</a><a href="#entwicklung" data-de="Webentwicklung" data-en="Web development">Webentwicklung</a><a href="impressum.html#privacy" data-de="Datenschutz" data-en="Privacy">Datenschutz</a><a href="impressum.html" data-de="Impressum" data-en="Legal notice">Impressum</a><a href="mailto:jspixelcraft@icloud.com" data-de="Kontakt" data-en="Contact">Kontakt</a></div></div></footer>
+
+  <footer class="site-footer home-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><a class="brand" href="/"><img src="assets/mark.svg" width="256" height="256" alt=""><span>JSPixelcraft</span></a><p>Independent App &amp; Web Developer<br>Apps · Websites · Digital Products</p><a href="mailto:jspixelcraft@icloud.com">jspixelcraft@icloud.com</a></div>
+      <div><h2 data-de="Navigation" data-en="Navigation">Navigation</h2><a href="/">Home</a><a href="#apps">Apps</a><a href="#websites">Websites</a><a href="#ablauf" data-de="Ablauf" data-en="Process">Ablauf</a><a href="#kontakt" data-de="Kontakt" data-en="Contact">Kontakt</a></div>
+      <div><h2 data-de="Leistungen" data-en="Services">Leistungen</h2><a href="#leistungen" data-de="iOS App-Entwicklung" data-en="iOS app development">iOS App-Entwicklung</a><a href="#websites" data-de="Webentwicklung" data-en="Web development">Webentwicklung</a><a href="#leistungen">UI/UX Design</a><a href="#leistungen" data-de="Wartung &amp; Support" data-en="Maintenance &amp; support">Wartung &amp; Support</a></div>
+      <div><h2 data-de="Rechtliches" data-en="Legal">Rechtliches</h2><a href="impressum.html" data-de="Impressum" data-en="Legal notice">Impressum</a><a href="impressum.html#privacy" data-de="Datenschutz" data-en="Privacy">Datenschutz</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 JSPixelcraft. <span data-de="Alle Rechte vorbehalten." data-en="All rights reserved.">Alle Rechte vorbehalten.</span></span><span data-de="Mit Sorgfalt für ambitionierte Produkte entwickelt." data-en="Crafted with care for ambitious products.">Mit Sorgfalt für ambitionierte Produkte entwickelt.</span></div>
+  </footer>
   <script src="assets/site.js?v=20260808-1"></script>
 </body>
 </html>
