@@ -1075,6 +1075,39 @@ body.product-premium .grid-3 .card h3 { font-size: 1.18rem; }
 body.product-premium .banner { overflow: hidden; border-color: color-mix(in srgb, var(--accent) 25%, var(--line)); background: linear-gradient(120deg, color-mix(in srgb, var(--accent-2) 15%, #111419), #10131c); }
 body.product-premium .site-footer { border-top-color: color-mix(in srgb, var(--accent) 14%, var(--line)); }
 
+/* Service detail pages */
+body.service-page { --accent: #2491ff; --accent-2: #963eea; background: radial-gradient(circle at 78% 8%, rgba(34, 107, 255, .16), transparent 27%), #050b14; }
+body.service-page main { overflow: clip; }
+.service-hero-visual { position: relative; display: grid; min-height: 520px; place-items: center; isolation: isolate; }
+.service-hero-visual::before { position: absolute; z-index: -2; width: 82%; height: 70%; border-radius: 50%; background: linear-gradient(120deg, color-mix(in srgb, var(--accent) 35%, transparent), color-mix(in srgb, var(--accent-2) 28%, transparent)); filter: blur(80px); opacity: .54; content: ""; }
+.service-blueprint { width: min(470px, 96%); padding: 25px; border: 1px solid rgba(124, 177, 225, .22); border-radius: 24px; background: linear-gradient(145deg, rgba(15, 31, 50, .96), rgba(7, 15, 26, .95)); box-shadow: 0 40px 90px rgba(0,0,0,.52); transform: rotate(-2deg); }
+.service-blueprint-head { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+.service-blueprint-head span { color: var(--muted); font-size: 10px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+.service-blueprint-head strong { color: var(--accent); font-size: 12px; }
+.service-blueprint-main { padding: 34px 0; }
+.service-blueprint-main small { color: var(--muted); letter-spacing: .11em; text-transform: uppercase; }
+.service-blueprint-main h2 { margin: 8px 0 10px; font-size: clamp(2rem, 4vw, 3.5rem); letter-spacing: -.055em; }
+.service-blueprint-main p { margin: 0; color: var(--muted); font-size: 13px; }
+.service-blueprint-rows { display: grid; gap: 9px; }
+.service-blueprint-row { display: grid; grid-template-columns: 34px 1fr auto; align-items: center; gap: 12px; padding: 13px; border: 1px solid var(--line); border-radius: 10px; background: rgba(255,255,255,.03); }
+.service-blueprint-row i { display: grid; width: 30px; height: 30px; place-items: center; border-radius: 8px; background: rgba(36,145,255,.12); color: var(--accent); font-style: normal; }
+.service-blueprint-row span { color: var(--muted); font-size: 12px; }
+.service-blueprint-row strong { font-size: 11px; }
+.service-facts { margin-top: -28px; margin-bottom: 62px; }
+.service-page .home-cta-section { padding-bottom: 96px; }
+.service-page .home-footer { background: rgba(3, 8, 15, .75); }
+
+@media (max-width: 1050px) {
+  .service-hero-visual { min-height: 460px; }
+}
+
+@media (max-width: 720px) {
+  .service-hero-visual { min-height: 400px; }
+  .service-blueprint { padding: 18px; }
+  .service-blueprint-main { padding: 25px 0; }
+  .service-facts { margin-top: 0; }
+}
+
 /* Detailed product storytelling shared by all apps */
 .product-overview-section { padding: 112px 0; border-top: 1px solid rgba(255,255,255,.055); }
 .product-overview { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(320px, .92fr); align-items: center; gap: clamp(38px, 7vw, 94px); }
