@@ -13,7 +13,7 @@
   };
 
   const isGermanOnly = body.dataset.languageMode === "de-only";
-  const initial = isGermanOnly || (navigator.language || "en").toLowerCase().startsWith("de") ? "de" : "en";
+  const initial = isGermanOnly ? "de" : "en";
 
   function localizeElements(language) {
     document.querySelectorAll("[data-de][data-en]").forEach((element) => {
