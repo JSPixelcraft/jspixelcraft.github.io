@@ -3,15 +3,53 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="JSPixelcraft entwickelt native Apps und moderne Websites nach Kundenwunsch – klar, datenschutzbewusst und persönlich.">
+  <meta name="description" content="JSPixelcraft entwickelt moderne Apps, Websites und digitale Produkte – von Konzept und UI bis zur technischen Umsetzung und Veröffentlichung.">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#07101f">
-  <link rel="canonical" href="https://jspixelcraft.github.io/">
-  <title>JSPixelcraft – Apps & Websites</title>
+  <link rel="canonical" href="https://www.jspixelcraft.com/">
+  <meta property="og:title" content="App- &amp; Webentwicklung | JSPixelcraft">
+  <meta property="og:description" content="JSPixelcraft entwickelt moderne Apps, Websites und digitale Produkte – von Konzept und UI bis zur technischen Umsetzung und Veröffentlichung.">
+  <meta property="og:url" content="https://www.jspixelcraft.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.jspixelcraft.com/logo.png">
+  <meta property="og:image:alt" content="JSPixelcraft Logo">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>App- &amp; Webentwicklung | JSPixelcraft</title>
   <link rel="icon" href="assets/mark.svg">
   <link rel="stylesheet" href="assets/site.css?v=20260801-3">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://www.jspixelcraft.com/#organization",
+        "name": "JSPixelcraft",
+        "url": "https://www.jspixelcraft.com/",
+        "logo": "https://www.jspixelcraft.com/logo.png",
+        "description": "Independent App & Web Developer für Apps, Websites und digitale Produkte."
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.jspixelcraft.com/#website",
+        "url": "https://www.jspixelcraft.com/",
+        "name": "JSPixelcraft",
+        "publisher": { "@id": "https://www.jspixelcraft.com/#organization" },
+        "inLanguage": ["de", "en"]
+      }
+    ]
+  }
+  </script>
 </head>
-<body data-root="" data-app="JSPixelcraft" data-page="home" data-icon="assets/mark.svg" data-title-de="JSPixelcraft – Apps & Websites" data-title-en="JSPixelcraft – Apps & Websites">
+<body data-root="" data-app="JSPixelcraft" data-page="home" data-icon="assets/mark.svg" data-title-de="App- &amp; Webentwicklung | JSPixelcraft" data-title-en="App &amp; web development | JSPixelcraft">
+  <header class="site-header">
+    <a class="skip-link" href="#content" data-de="Zum Inhalt" data-en="Skip to content">Zum Inhalt</a>
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a class="brand" href="/" aria-label="JSPixelcraft"><img src="assets/mark.svg" width="256" height="256" alt=""><span>JSPixelcraft</span></a>
+      <div class="nav-links"><a href="#apps">Apps</a><a href="#entwicklung" data-de="Entwicklung" data-en="Development">Entwicklung</a></div>
+      <div class="language-switch" aria-label="Sprache"><button type="button" data-language="de">DE</button><button type="button" data-language="en">EN</button></div>
+    </nav>
+  </header>
   <main id="content">
     <div class="container">
       <section class="hero">
@@ -25,8 +63,8 @@
           </div>
         </div>
         <div class="hero-art studio-card">
-          <div class="studio-card-top"><span data-de="Studio / Deutschland" data-en="Studio / Germany">Studio / Deutschland</span><span class="status"><i></i><span data-de="Projektanfragen offen" data-en="Open for projects">Projektanfragen offen</span></span></div>
-          <div class="studio-mark"><img class="app-icon" src="assets/mark.svg" alt="JSPixelcraft Logo"></div>
+          <div class="studio-card-top"><span data-de="Independent Studio" data-en="Independent studio">Independent Studio</span><span class="status"><i></i><span data-de="Projektanfragen offen" data-en="Open for projects">Projektanfragen offen</span></span></div>
+          <div class="studio-mark"><img class="app-icon" src="assets/mark.svg" width="256" height="256" fetchpriority="high" alt="JSPixelcraft Logo"></div>
           <div class="studio-card-bottom"><strong>Swift · SwiftUI · Web</strong><span data-de="Konzept, Design & Entwicklung aus einer Hand" data-en="Strategy, design & development in one place">Konzept, Design & Entwicklung aus einer Hand</span></div>
         </div>
       </section>
@@ -47,37 +85,37 @@
         </div>
         <div class="grid grid-5 apps-grid">
           <article class="card app-card">
-            <img class="mini-icon" src="logofahrtenbuch.png" alt="Fahrtenbuch Buddy App Icon">
+            <img class="mini-icon" src="logofahrtenbuch.png" width="512" height="512" loading="lazy" alt="Fahrtenbuch Buddy App Icon">
             <h3>Fahrtenbuch Buddy</h3>
             <p data-de="Fahrten automatisch, privat und nachvollziehbar dokumentieren." data-en="Document trips automatically, privately and transparently.">Fahrten automatisch, privat und nachvollziehbar dokumentieren.</p>
             <a class="button button-secondary" href="fahrtenbuchbuddy/" data-de="Fahrtenbuch Buddy öffnen" data-en="Open Fahrtenbuch Buddy">Fahrtenbuch Buddy öffnen</a>
           </article>
           <article class="card app-card">
-            <img class="mini-icon" src="logofly.png" alt="FlyBuddy App Icon">
+            <img class="mini-icon" src="logofly.png" width="512" height="512" loading="lazy" alt="FlyBuddy App Icon">
             <h3>FlyBuddy</h3>
             <p data-de="Fluginformationen prüfen, simulierte Routen ansehen und Flughäfen mit weniger Stress verstehen." data-en="Check flight information, view simulated routes and navigate airports with less stress.">Fluginformationen und simulierte Routen für entspannteres Reisen.</p>
             <a class="button button-secondary" href="flybuddy/" data-de="FlyBuddy öffnen" data-en="Open FlyBuddy">FlyBuddy öffnen</a>
           </article>
           <article class="card app-card">
-            <img class="mini-icon" src="logozeit.png" alt="ZeitPilot App Icon">
+            <img class="mini-icon" src="logozeit.png" width="512" height="512" loading="lazy" alt="ZeitPilot App Icon">
             <h3>ZeitPilot</h3>
             <p data-de="Arbeitszeiten, Teams und Berichte professionell organisieren." data-en="Organize working hours, teams and reports professionally.">Arbeitszeiten professionell organisieren.</p>
             <a class="button button-secondary" href="zeitpilot/" data-de="ZeitPilot öffnen" data-en="Open ZeitPilot">ZeitPilot öffnen</a>
           </article>
           <article class="card app-card">
-            <img class="mini-icon" src="logoscan.png" alt="ScanBuddy App Icon">
+            <img class="mini-icon" src="logoscan.png" width="512" height="512" loading="lazy" alt="ScanBuddy App Icon">
             <h3>ScanBuddy</h3>
             <p data-de="Dokumente scannen, bearbeiten und sicher auf dem iPhone verwalten." data-en="Scan, edit and securely manage documents on iPhone.">Dokumente scannen und sicher verwalten.</p>
             <a class="button button-secondary" href="scanbuddy/" data-de="ScanBuddy öffnen" data-en="Open ScanBuddy">ScanBuddy öffnen</a>
           </article>
           <article class="card app-card">
-            <img class="mini-icon" src="logosenioren.png" alt="SeniorenBuddy App Icon">
+            <img class="mini-icon" src="logosenioren.png" width="512" height="512" loading="lazy" alt="SeniorenBuddy App Icon">
             <h3>SeniorenBuddy</h3>
             <p data-de="Medikamente, Termine und Hilfe gemeinsam oder selbstständig im Blick behalten." data-en="Keep medication, appointments and support organized independently or together.">Den Alltag sicher und übersichtlich organisieren.</p>
             <a class="button button-secondary" href="seniorenbuddy/?v=20260718-3" data-de="SeniorenBuddy öffnen" data-en="Open SeniorenBuddy">SeniorenBuddy öffnen</a>
           </article>
           <article class="card app-card app-card-upcoming">
-            <img class="mini-icon" src="logokassenanker.png" alt="KassenAnker App Icon">
+            <img class="mini-icon" src="logokassenanker.png" width="512" height="512" loading="lazy" alt="KassenAnker App Icon">
             <div class="app-card-title">
               <h3>KassenAnker</h3>
               <span class="availability-badge" data-de="Erscheint bald" data-en="Coming soon">Erscheint bald</span>
@@ -118,6 +156,7 @@
     </section>
 
   </main>
+  <footer class="site-footer"><div class="footer-inner"><span>© 2026 JSPixelcraft</span><div class="footer-links"><a href="#apps">Apps</a><a href="#entwicklung" data-de="Webentwicklung" data-en="Web development">Webentwicklung</a><a href="impressum.html#privacy" data-de="Datenschutz" data-en="Privacy">Datenschutz</a><a href="impressum.html" data-de="Impressum" data-en="Legal notice">Impressum</a><a href="mailto:jspixelcraft@icloud.com" data-de="Kontakt" data-en="Contact">Kontakt</a></div></div></footer>
   <script src="assets/site.js?v=20260718-2"></script>
 </body>
 </html>

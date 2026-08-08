@@ -38,9 +38,11 @@
   }
 
   const navTarget = page === "home" ? `${root}index.html` : "index.html";
-  const header = document.createElement("header");
-  header.className = "site-header";
-  header.innerHTML = `
+  let header = document.querySelector(".site-header");
+  if (!header) {
+    header = document.createElement("header");
+    header.className = "site-header";
+    header.innerHTML = `
     <a class="skip-link" href="#content" data-de="Zum Inhalt" data-en="Skip to content">Skip to content</a>
     <nav class="nav" aria-label="Main navigation">
       <a class="brand" href="${navTarget}" aria-label="${app}">
@@ -59,7 +61,8 @@
         <button type="button" data-language="en">EN</button>
       </div>
     </nav>`;
-  body.prepend(header);
+    body.prepend(header);
+  }
   if (isGermanOnly) header.querySelector(".language-switch")?.remove();
 
   if (page === "product") {
@@ -86,19 +89,24 @@
     });
   }
 
-  const footer = document.createElement("footer");
-  footer.className = "site-footer";
-  footer.innerHTML = `
+  let footer = document.querySelector(".site-footer");
+  if (!footer) {
+    footer = document.createElement("footer");
+    footer.className = "site-footer";
+    footer.innerHTML = `
     <div class="footer-inner">
       <span>© 2026 JSPixelcraft</span>
       <div class="footer-links">
+        <a href="${root}#apps" data-de="Apps" data-en="Apps">Apps</a>
+        <a href="${root}#entwicklung" data-de="Webentwicklung" data-en="Web development">Webentwicklung</a>
         ${isAppPage ? `<a href="support.html">Support</a>` : ""}
         <a href="${isAppPage ? "privacy.html" : `${root}impressum.html#privacy`}" data-de="Datenschutz" data-en="Privacy">Privacy</a>
         <a href="${root}impressum.html" data-de="Impressum" data-en="Legal notice">Impressum</a>
         <a href="mailto:jspixelcraft@icloud.com" data-de="Kontakt" data-en="Contact">Contact</a>
       </div>
     </div>`;
-  body.append(footer);
+    body.append(footer);
+  }
 
   document.querySelectorAll("[data-language]").forEach((button) => {
     button.addEventListener("click", () => setLanguage(button.dataset.language));
