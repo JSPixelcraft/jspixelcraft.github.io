@@ -13,7 +13,119 @@
   };
 
   const isGermanOnly = body.dataset.languageMode === "de-only";
-  const initial = isGermanOnly ? "de" : "en";
+  let savedLanguage = null;
+  try {
+    savedLanguage = localStorage.getItem("jspixelcraft-language");
+  } catch (_) {}
+  const initial = isGermanOnly ? "de" : savedLanguage === "de" || savedLanguage === "en" ? savedLanguage : "en";
+
+  const staticTranslations = [
+    ["Zum Inhalt", "Skip to content"],
+    ["Webentwicklung", "Web development"],
+    ["Datenschutz", "Privacy"],
+    ["Impressum", "Legal notice"],
+    ["Kontakt", "Contact"],
+    ["E-Mail:", "Email:"],
+    ["Ablauf", "Process"],
+    ["Leistungen", "Services"],
+    ["Rechtliches", "Legal"],
+    ["Dein Fahrtenbuch.", "Your logbook."],
+    ["Flüge im Blick", "Flights at a glance"],
+    ["Teams klar organisiert", "Teams clearly organized"],
+    ["12 Dokumente", "12 documents"],
+    ["Geschäftsjahr 2026", "Fiscal year 2026"],
+    ["KassenAnker mobil", "KassenAnker mobile"],
+    ["iOS App · Bald", "iOS app · Coming soon"],
+    ["Mac + iPhone · Bald", "Mac + iPhone · Coming soon"],
+    ["01 / PRÜFEN", "01 / REVIEW"],
+    ["02 / ÜBERGEBEN", "02 / HAND OVER"],
+    ["01 / REISEABLAUF", "01 / ITINERARY"],
+    ["02 / FLUGHAFEN", "02 / AIRPORT"],
+    ["03 / ASSISTENZ", "03 / ASSISTANCE"],
+    ["01 / ERFASSEN", "01 / CAPTURE"],
+    ["02 / VERSTEHEN", "02 / UNDERSTAND"],
+    ["03 / ORGANISIEREN", "03 / ORGANIZE"],
+    ["01 / TAGESABLAUF", "01 / DAILY ROUTINE"],
+    ["02 / GEMEINSAM", "02 / TOGETHER"],
+    ["03 / HILFE", "03 / HELP"],
+    ["02 / TEAM", "02 / TEAM"],
+    ["03 / AUSWERTEN", "03 / ANALYZE"],
+    ["SCHNELLBUCHUNGEN", "QUICK ENTRIES"],
+    ["02 / BELEGE", "02 / RECEIPTS"],
+    ["03 / ABSCHLIESSEN", "03 / CLOSE"],
+    ["04 / GESCHÄFTSKONTO", "04 / BUSINESS ACCOUNT"],
+    ["05 / STEUERBERATER-EXPORT", "05 / TAX ADVISOR EXPORT"],
+    ["06 / ARCHIV", "06 / ARCHIVE"],
+    ["01 / KONZEPT", "01 / CONCEPT"],
+    ["02 / DESIGN & ENTWICKLUNG", "02 / DESIGN & DEVELOPMENT"],
+    ["03 / RELEASE", "03 / RELEASE"],
+    ["TestFlight & Qualitätsprüfung", "TestFlight & quality assurance"],
+    ["01 / VERSTEHEN", "01 / UNDERSTAND"],
+    ["02 / ENTWERFEN", "02 / DESIGN"],
+    ["03 / SYSTEMATISIEREN", "03 / SYSTEMIZE"],
+    ["01 / ERHALTEN", "01 / MAINTAIN"],
+    ["02 / REAGIEREN", "02 / RESPOND"],
+    ["03 / WEITERENTWICKELN", "03 / EVOLVE"],
+    ["01 / STRATEGIE & DESIGN", "01 / STRATEGY & DESIGN"],
+    ["02 / ENTWICKLUNG", "02 / DEVELOPMENT"],
+    ["03 / VERÖFFENTLICHUNG", "03 / LAUNCH"],
+    ["Technische SEO", "Technical SEO"],
+    ["Projekt anfragen", "Start a project"],
+    ["Design-Projekt besprechen", "Discuss a design project"],
+    ["Leistungsumfang", "Scope of services"],
+    ["Support anfragen", "Request support"],
+    ["Betreuung anfragen", "Request ongoing support"],
+    ["Navigation", "Navigation"],
+    ["iOS App-Entwicklung", "iOS app development"],
+    ["Wartung & Support", "Maintenance & support"],
+    ["Mit Sorgfalt für ambitionierte Produkte entwickelt.", "Crafted with care for ambitious products."]
+  ];
+
+  const staticTranslationLookup = new Map();
+  staticTranslations.forEach(([de, en]) => {
+    staticTranslationLookup.set(de, { de, en });
+    staticTranslationLookup.set(en, { de, en });
+  });
+
+  function localizeStaticText(language) {
+    const walker = document.createTreeWalker(body, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach((node) => {
+      const parent = node.parentElement;
+      if (!parent || parent.closest("[data-de][data-en]") || ["SCRIPT", "STYLE"].includes(parent.tagName)) return;
+      const value = node.nodeValue;
+      const trimmed = value.trim();
+      const translation = staticTranslationLookup.get(trimmed);
+      if (!translation) return;
+      node.nodeValue = value.replace(trimmed, translation[language]);
+    });
+
+    const attributeTranslations = new Map();
+    [
+      ["Hauptnavigation", "Main navigation"],
+      ["Zurück zur Hauptseite", "Back to home"],
+      ["Sprache", "Language"],
+      ["JSPixelcraft Startseite", "JSPixelcraft home page"],
+      ["FlyBuddy auf dem iPhone und ZeitPilot auf dem iPad", "FlyBuddy on iPhone and ZeitPilot on iPad"],
+      ["ZeitPilot App auf einem iPad mit Mitarbeiterübersicht", "ZeitPilot app on an iPad with an employee overview"],
+      ["FlyBuddy App auf einem iPhone mit Flugübersicht", "FlyBuddy app on an iPhone with a flight overview"],
+      ["FlyBuddy Flugübersicht auf einem iPhone", "FlyBuddy flight overview on an iPhone"],
+      ["FlyBuddy Flugübersicht mit Reiseplan, Check-in und Gate", "FlyBuddy flight overview with itinerary, check-in and gate"],
+      ["ZeitPilot Mitarbeiterübersicht auf einem iPad", "ZeitPilot employee overview on an iPad"],
+      ["Beispielhafte KassenAnker Dashboard-Ansicht", "Example KassenAnker dashboard view"],
+      ["Beispielhafte KassenAnker iPhone-Ansicht", "Example KassenAnker iPhone view"]
+    ].forEach(([de, en]) => {
+      attributeTranslations.set(de, { de, en });
+      attributeTranslations.set(en, { de, en });
+    });
+    document.querySelectorAll("[aria-label], [alt]").forEach((element) => {
+      ["aria-label", "alt"].forEach((attribute) => {
+        const translation = attributeTranslations.get(element.getAttribute(attribute));
+        if (translation) element.setAttribute(attribute, translation[language]);
+      });
+    });
+  }
 
   function localizeElements(language) {
     document.querySelectorAll("[data-de][data-en]").forEach((element) => {
@@ -27,6 +139,7 @@
   function setLanguage(language) {
     html.lang = language;
     localizeElements(language);
+    localizeStaticText(language);
     document.querySelectorAll("[data-language]").forEach((button) => {
       const active = button.dataset.language === language;
       button.classList.toggle("active", active);
@@ -109,7 +222,13 @@
   }
 
   document.querySelectorAll("[data-language]").forEach((button) => {
-    button.addEventListener("click", () => setLanguage(button.dataset.language));
+    button.addEventListener("click", () => {
+      const language = button.dataset.language;
+      try {
+        localStorage.setItem("jspixelcraft-language", language);
+      } catch (_) {}
+      setLanguage(language);
+    });
   });
 
   setLanguage(initial);
