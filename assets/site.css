@@ -1115,7 +1115,7 @@ body.service-page main { overflow: clip; }
 .product-overview-media { position: relative; display: grid; min-height: 500px; overflow: hidden; place-items: center; padding: clamp(22px, 4vw, 44px); border: 1px solid var(--line); border-radius: var(--radius-xl); background: radial-gradient(circle at 50% 42%, color-mix(in srgb, var(--accent-2) 20%, transparent), transparent 48%), #0a121e; box-shadow: var(--shadow); }
 .product-overview-media > img { display: block; width: 100%; max-height: 440px; border: 1px solid rgba(255,255,255,.16); border-radius: 18px; object-fit: contain; box-shadow: 0 28px 62px rgba(0,0,0,.45); }
 .product-overview-media.zeitpilot-overview-media { min-height: 610px; padding: 28px; }
-.product-overview-media.zeitpilot-overview-media > img { width: min(390px, 100%); max-height: 540px; aspect-ratio: 1400 / 1866; object-fit: contain; }
+.product-overview-media.zeitpilot-overview-media > img { width: min(390px, 100%); height: auto; max-height: 540px; aspect-ratio: 1400 / 1866; object-fit: contain; }
 body[data-theme="zeitpilot"] .product-overview { grid-template-columns: minmax(320px, .82fr) minmax(0, 1.18fr); }
 body[data-theme="zeitpilot"] .product-overview-copy h2 { font-size: clamp(2.15rem, 3.5vw, 3.4rem); }
 .product-overview-media .product-concept { width: min(430px, 96%); transform: none; }
