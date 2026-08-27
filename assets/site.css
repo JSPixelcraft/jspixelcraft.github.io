@@ -1018,6 +1018,7 @@ body.product-premium .hero-art::after { display: none; }
 .product-device-phone::before { position: absolute; z-index: 2; top: 18px; left: 50%; width: 84px; height: 24px; border-radius: 18px; background: #000; content: ""; transform: translateX(-50%); }
 .product-device-tablet { width: min(680px, 104%); aspect-ratio: 1.43; padding: 10px; border-radius: 28px; transform: perspective(1200px) rotateY(-5deg) rotateZ(-2deg); }
 .product-device-tablet img { border-radius: 19px; }
+.product-device-ipad-promo { width: min(520px, 88%); aspect-ratio: 1400 / 1866; border-radius: 24px; transform: perspective(1200px) rotateY(-4deg) rotateZ(-1.5deg); }
 
 .product-visual-label {
   position: absolute;
@@ -1113,6 +1114,8 @@ body.service-page main { overflow: clip; }
 .product-overview { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(320px, .92fr); align-items: center; gap: clamp(38px, 7vw, 94px); }
 .product-overview-media { position: relative; display: grid; min-height: 500px; overflow: hidden; place-items: center; padding: clamp(22px, 4vw, 44px); border: 1px solid var(--line); border-radius: var(--radius-xl); background: radial-gradient(circle at 50% 42%, color-mix(in srgb, var(--accent-2) 20%, transparent), transparent 48%), #0a121e; box-shadow: var(--shadow); }
 .product-overview-media > img { display: block; width: 100%; max-height: 440px; border: 1px solid rgba(255,255,255,.16); border-radius: 18px; object-fit: contain; box-shadow: 0 28px 62px rgba(0,0,0,.45); }
+.product-overview-media.zeitpilot-overview-media { min-height: 720px; }
+.product-overview-media.zeitpilot-overview-media > img { width: min(520px, 100%); max-height: none; aspect-ratio: 1400 / 1866; object-fit: cover; }
 .product-overview-media .product-concept { width: min(430px, 96%); transform: none; }
 .product-overview-copy .eyebrow { margin-bottom: 18px; }
 .product-overview-copy h2 { margin-bottom: 18px; font-size: clamp(2.35rem, 4.4vw, 4.25rem); line-height: 1.07; letter-spacing: -.055em; }
@@ -1169,6 +1172,7 @@ body.service-page main { overflow: clip; }
   body.product-premium .hero-art { min-height: 500px; }
   .product-visual { min-height: 500px; }
   .product-device-tablet { width: min(680px, 92%); }
+  .product-device-ipad-promo { width: min(500px, 78%); }
   .product-overview, .product-story-layout { grid-template-columns: 1fr; }
   .zeitpilot-gallery-heading { grid-template-columns: 1fr; }
   .zeitpilot-gallery-heading > p { max-width: 720px; }
@@ -1189,6 +1193,7 @@ body.service-page main { overflow: clip; }
   .product-device-phone::before { top: 11px; width: 54px; height: 16px; }
   .product-device-tablet { width: 108%; padding: 6px; border-radius: 18px; }
   .product-device-tablet img { border-radius: 12px; }
+  .product-device-ipad-promo { width: min(310px, 88%); border-radius: 18px; }
   .product-visual-label { right: 0; bottom: 8%; min-width: 138px; padding: 12px 14px; }
   .product-concept { width: 100%; padding: 18px; border-radius: 21px; }
   .product-concept-head img { width: 52px; height: 52px; }
@@ -1202,6 +1207,8 @@ body.service-page main { overflow: clip; }
   .zeitpilot-gallery { grid-auto-columns: minmax(235px, 78vw); gap: 12px; margin-right: -14px; }
   .product-overview-media { min-height: 390px; padding: 18px; }
   .product-overview-media > img { max-height: 350px; }
+  .product-overview-media.zeitpilot-overview-media { min-height: 0; }
+  .product-overview-media.zeitpilot-overview-media > img { max-height: none; }
   .product-story-content .product-check-list, .product-duo, .product-trust-grid { grid-template-columns: 1fr; }
   .product-trust-grid article, .product-trust-grid article:nth-child(2n), .product-trust-grid article:nth-child(3n) { border-right: 0; }
 }
