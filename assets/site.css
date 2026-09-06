@@ -1173,8 +1173,7 @@ body[data-theme="zeitpilot"] .product-overview-copy h2 { font-size: clamp(2.15re
 
 /* Movie Buddy */
 .moviebuddy-concept { background: linear-gradient(150deg, rgba(65, 41, 119, .72), #101827 48%, #08111e); }
-.moviebuddy-featured { grid-column: 1 / -1; min-height: 220px; background: radial-gradient(circle at 80% 20%, rgba(137, 86, 255, .18), transparent 34%), linear-gradient(145deg, rgba(18, 32, 55, .98), rgba(10, 17, 31, .94)); }
-.moviebuddy-featured > p { max-width: 620px; }
+.moviebuddy-jump { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .moviebuddy-credits { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 32px; }
 .moviebuddy-credit { padding: 22px; border: 1px solid var(--line); border-radius: var(--radius-md); background: rgba(255,255,255,.025); }
 .moviebuddy-credit h3 { margin-bottom: 7px; font-size: 1rem; }
@@ -1193,8 +1192,13 @@ body[data-theme="zeitpilot"] .product-overview-copy h2 { font-size: clamp(2.15re
 .placeholder-notice strong { color: var(--warning); }
 .independence-note { font-size: .9rem; }
 
+@media (max-width: 900px) {
+  .moviebuddy-jump { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .moviebuddy-jump a:nth-child(2) { border-right: 0; }
+  .moviebuddy-jump a:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+}
+
 @media (max-width: 720px) {
-  .moviebuddy-featured { grid-column: auto; }
   .moviebuddy-credits { grid-template-columns: 1fr; }
 }
 
