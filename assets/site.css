@@ -1018,6 +1018,8 @@ body.product-premium .hero-art::after { display: none; }
 .product-device-phone { width: min(285px, 68%); aspect-ratio: .462; padding: 9px; border-radius: 48px; transform: rotate(-4deg); }
 .product-device-phone img { border-radius: 38px; }
 .product-device-phone::before { position: absolute; z-index: 2; top: 18px; left: 50%; width: 84px; height: 24px; border-radius: 18px; background: #000; content: ""; transform: translateX(-50%); }
+.product-device-store { width: min(300px, 70%); aspect-ratio: 600 / 1299; border-radius: 28px; transform: rotate(-3deg); }
+.product-device-store img { border-radius: 27px; }
 .product-device-tablet { width: min(680px, 104%); aspect-ratio: 1.43; padding: 10px; border-radius: 28px; transform: perspective(1200px) rotateY(-5deg) rotateZ(-2deg); }
 .product-device-tablet img { border-radius: 19px; }
 .product-device-ipad-promo { width: min(520px, 88%); aspect-ratio: 1400 / 1866; border-radius: 24px; transform: perspective(1200px) rotateY(-4deg) rotateZ(-1.5deg); }
@@ -1227,6 +1229,8 @@ body[data-theme="zeitpilot"] .product-overview-copy h2 { font-size: clamp(2.15re
   .product-device-phone { width: 176px; padding: 6px; border-radius: 31px; }
   .product-device-phone img { border-radius: 24px; }
   .product-device-phone::before { top: 11px; width: 54px; height: 16px; }
+  .product-device-store { width: 190px; border-radius: 20px; }
+  .product-device-store img { border-radius: 19px; }
   .product-device-tablet { width: 108%; padding: 6px; border-radius: 18px; }
   .product-device-tablet img { border-radius: 12px; }
   .product-device-ipad-promo { width: min(310px, 88%); border-radius: 18px; }
