@@ -2,9 +2,9 @@
   const pairs = [
     // Product page
     ["Filme, Serien & Streaming. Alles an einem Ort.", "Movies, shows & streaming. All in one place."],
-    ["Deine Filme. Deine Serien.", "Your movies. Your shows."],
+    ["Film- und Serienmediathek für macOS", "Movie and TV library for macOS"],
     ["Organisiere eigene Filme und Serien, spiele lokale Inhalte direkt ab und nutze Streamingdienste im integrierten Streaming-Bereich – alles an einem ruhigen, übersichtlichen Ort.", "Organize your own movies and shows, play local content directly and use streaming services in the integrated streaming area—all in one calm, organized place."],
-    ["Erscheint bald im Mac App Store", "Coming soon to the Mac App Store"],
+    ["Im Mac App Store laden", "Download on the Mac App Store"],
     ["Movie Buddy entdecken", "Explore Movie Buddy"],
     ["Movie Buddy für macOS", "Movie Buddy for macOS"],
     ["Mediathek", "Library"],
@@ -145,8 +145,7 @@
     ["Movie Buddy ist ein unabhängiges Produkt. Genannte Marken, Dienste und Logos gehören ihren jeweiligen Eigentümern. Eine Nennung bedeutet keine Partnerschaft oder Billigung.", "Movie Buddy is an independent product. All trademarks, services and logos mentioned belong to their respective owners. Mentioning them does not imply a partnership or endorsement."],
     ["Bereit für deine Sammlung", "Ready for your collection"],
     ["Ein ruhiger Ort für Filme, Serien und deinen Fortschritt.", "A calm place for movies, shows and your progress."],
-    ["Movie Buddy ist für macOS 15 und neuer vorgesehen und erscheint bald im Mac App Store.", "Movie Buddy is designed for macOS 15 and later and is coming soon to the Mac App Store."],
-    ["Erscheint bald", "Coming soon"],
+    ["Movie Buddy ist für macOS 15 und neuer im Mac App Store erhältlich.", "Movie Buddy is available on the Mac App Store for macOS 15 and later."],
     ["Support öffnen", "Open support"],
 
     // Support page
@@ -318,7 +317,7 @@
     ["12. Änderungen dieser Erklärung", "12. Changes to this policy"],
     ["Diese Erklärung kann angepasst werden, wenn sich Movie Buddy, angebundene Dienste oder rechtliche Anforderungen ändern. Die aktuelle Fassung wird auf dieser Seite veröffentlicht.", "This policy may be updated if Movie Buddy, connected services or legal requirements change. The current version will be published on this page."],
     ["Hinweis zur rechtlichen Prüfung", "Legal review note"],
-    ["Diese Fassung beschreibt die vorgesehenen Funktionen und Datenflüsse von Movie Buddy. Vor der Veröffentlichung im Mac App Store sollte sie nochmals gegen die tatsächlich ausgelieferte App-Version und die endgültig verwendeten Drittanbieter-Endpunkte geprüft werden.", "This version describes Movie Buddy's intended features and data flows. Before publication on the Mac App Store, it should be checked again against the app version actually released and the final third-party endpoints in use."],
+    ["Diese Fassung beschreibt die Funktionen und Datenflüsse der im Mac App Store veröffentlichten Movie-Buddy-Version. Bei Änderungen an Funktionen oder Drittanbieter-Endpunkten wird sie entsprechend aktualisiert.", "This version describes the features and data flows of the Movie Buddy version published on the Mac App Store. It will be updated when features or third-party endpoints change."],
     ["Unabhängiges Produkt", "Independent product"]
   ];
 
@@ -346,8 +345,8 @@
 
     const metadata = {
       product: {
-        de: ["Movie Buddy ist deine persönliche Film- und Serienmediathek für macOS – für lokale Ordner, eigene Medienserver und verknüpfte Dienste.", "Movie Buddy – Deine persönliche Mediathek für macOS", "Filme und Serien aus deinen eigenen Quellen übersichtlich organisieren, wiederfinden und abspielen."],
-        en: ["Movie Buddy is your personal movie and TV library for macOS—for local folders, your own media servers and linked services.", "Movie Buddy – Your personal media library for macOS", "Organize, rediscover and play movies and shows from your own sources."]
+        de: ["Movie Buddy ist die Film- und Serienmediathek für macOS – für lokale Ordner, Plex, Jellyfin, Emby, Apple TV und weitere eigene Quellen.", "Movie Buddy – Film- und Serienmediathek für macOS", "Filme und Serien aus lokalen Ordnern, Medienservern und verknüpften Diensten organisieren und abspielen."],
+        en: ["Movie Buddy is the movie and TV library for macOS—for local folders, Plex, Jellyfin, Emby, Apple TV and other sources.", "Movie Buddy – Movie and TV library for macOS", "Organize and play movies and shows from local folders, media servers and linked services."]
       },
       support: {
         de: ["Hilfe, Anleitungen und häufige Fragen zu Movie Buddy für macOS."],
