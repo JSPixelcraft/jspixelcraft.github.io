@@ -798,7 +798,6 @@ body[data-page="home"] .button-primary:hover { background: linear-gradient(100de
 .project-badge { display: inline-flex; padding: 3px 8px; border-radius: 999px; background: rgba(31, 107, 220, .25); color: #88bcff; font-size: 9px; font-weight: 700; }
 .project-badge-purple { background: rgba(119, 69, 203, .22); color: #c9a7ff; }
 .project-badge-gold { background: rgba(183, 123, 27, .2); color: #f0c16a; }
-.project-badge-movie { background: rgba(139, 92, 246, .22); color: #cbb6ff; }
 .project-card p { margin-bottom: 22px; color: #8e9bab; font-size: 13px; line-height: 1.6; }
 .project-card > a { display: inline-flex; align-items: center; gap: 12px; margin-top: auto; color: #f4f7fa; font-size: 12px; font-weight: 680; text-decoration: none; }
 .project-card > a::after { color: #9ab0c6; content: "→"; font-size: 17px; transition: transform .18s ease; }
@@ -1022,6 +1021,8 @@ body.product-premium .hero-art::after { display: none; }
 .product-device-store img { border-radius: 27px; }
 .product-device-tablet { width: min(680px, 104%); aspect-ratio: 1.43; padding: 10px; border-radius: 28px; transform: perspective(1200px) rotateY(-5deg) rotateZ(-2deg); }
 .product-device-tablet img { border-radius: 19px; }
+.product-device-mac { width: min(760px, 112%); aspect-ratio: 16 / 10; padding: 7px; border-radius: 24px; transform: perspective(1200px) rotateY(-3deg) rotateZ(-1deg); }
+.product-device-mac img { border-radius: 17px; object-fit: cover; }
 .product-device-ipad-promo { width: min(520px, 88%); aspect-ratio: 1400 / 1866; border-radius: 24px; transform: perspective(1200px) rotateY(-4deg) rotateZ(-1.5deg); }
 
 .product-visual-label {
@@ -1176,6 +1177,18 @@ body[data-theme="zeitpilot"] .product-overview-copy h2 { font-size: clamp(2.15re
 /* Movie Buddy */
 .moviebuddy-concept { background: linear-gradient(150deg, rgba(65, 41, 119, .72), #101827 48%, #08111e); }
 .moviebuddy-jump { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.moviebuddy-gallery-section { padding: 118px 0 126px; border-top: 1px solid rgba(255,255,255,.055); }
+.moviebuddy-gallery-heading { display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, .68fr); align-items: end; gap: clamp(34px, 7vw, 96px); margin-bottom: 48px; }
+.moviebuddy-gallery-heading .eyebrow { margin-bottom: 18px; }
+.moviebuddy-gallery-heading h2 { max-width: 760px; margin-bottom: 0; font-size: clamp(2.4rem, 4.5vw, 4.3rem); line-height: 1.06; letter-spacing: -.055em; }
+.moviebuddy-gallery-heading > p { margin-bottom: 5px; color: var(--muted); }
+.moviebuddy-gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.moviebuddy-gallery figure { min-width: 0; margin: 0; transition: transform 200ms ease; }
+.moviebuddy-gallery figure:hover { transform: translateY(-6px); }
+.moviebuddy-gallery img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; border: 1px solid rgba(181, 214, 255, .2); border-radius: 18px; object-fit: cover; box-shadow: 0 28px 70px rgba(0,0,0,.34); }
+.moviebuddy-gallery figcaption { display: flex; align-items: center; gap: 9px; padding: 16px 4px 0; font-size: 12px; }
+.moviebuddy-gallery figcaption span { color: var(--accent); font-size: 10px; font-weight: 760; letter-spacing: .12em; }
+.moviebuddy-gallery figcaption strong { font-weight: 650; }
 .moviebuddy-credits { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 32px; }
 .moviebuddy-credit { padding: 22px; border: 1px solid var(--line); border-radius: var(--radius-md); background: rgba(255,255,255,.025); }
 .moviebuddy-credit h3 { margin-bottom: 7px; font-size: 1rem; }
@@ -1209,11 +1222,14 @@ body[data-theme="zeitpilot"] .product-overview-copy h2 { font-size: clamp(2.15re
   body.product-premium .hero-art { min-height: 500px; }
   .product-visual { min-height: 500px; }
   .product-device-tablet { width: min(680px, 92%); }
+  .product-device-mac { width: min(780px, 100%); }
   .product-device-ipad-promo { width: min(500px, 78%); }
   .product-overview, .product-story-layout { grid-template-columns: 1fr; }
   body[data-theme="zeitpilot"] .product-overview { grid-template-columns: 1fr; }
   .zeitpilot-gallery-heading { grid-template-columns: 1fr; }
   .zeitpilot-gallery-heading > p { max-width: 720px; }
+  .moviebuddy-gallery-heading { grid-template-columns: 1fr; }
+  .moviebuddy-gallery-heading > p { max-width: 720px; }
   .zeitpilot-gallery { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: minmax(230px, 31vw); overflow-x: auto; padding: 4px 2px 24px; scroll-snap-type: x mandatory; scrollbar-color: color-mix(in srgb, var(--accent-2) 40%, transparent) transparent; }
   .zeitpilot-gallery figure { scroll-snap-align: start; }
   .product-story-copy { position: static; }
@@ -1233,6 +1249,8 @@ body[data-theme="zeitpilot"] .product-overview-copy h2 { font-size: clamp(2.15re
   .product-device-store img { border-radius: 19px; }
   .product-device-tablet { width: 108%; padding: 6px; border-radius: 18px; }
   .product-device-tablet img { border-radius: 12px; }
+  .product-device-mac { width: 108%; padding: 4px; border-radius: 15px; transform: rotate(-1deg); }
+  .product-device-mac img { border-radius: 11px; }
   .product-device-ipad-promo { width: min(310px, 88%); border-radius: 18px; }
   .product-visual-label { right: 0; bottom: 8%; min-width: 138px; padding: 12px 14px; }
   .product-concept { width: 100%; padding: 18px; border-radius: 21px; }
@@ -1242,9 +1260,11 @@ body[data-theme="zeitpilot"] .product-overview-copy h2 { font-size: clamp(2.15re
   .product-jump a { border-right: 0; border-bottom: 1px solid var(--line); }
   .product-jump a:last-child { border-bottom: 0; }
   body.product-premium .grid-3 .card { min-height: 0; }
-  .product-overview-section, .product-story, .product-trust, .zeitpilot-gallery-section { padding: 76px 0; }
+  .product-overview-section, .product-story, .product-trust, .zeitpilot-gallery-section, .moviebuddy-gallery-section { padding: 76px 0; }
   .zeitpilot-gallery-heading { gap: 20px; margin-bottom: 34px; }
   .zeitpilot-gallery { grid-auto-columns: minmax(235px, 78vw); gap: 12px; margin-right: -14px; }
+  .moviebuddy-gallery-heading { gap: 20px; margin-bottom: 34px; }
+  .moviebuddy-gallery { grid-template-columns: 1fr; gap: 30px; }
   .product-overview-media { min-height: 390px; padding: 18px; }
   .product-overview-media > img { max-height: 350px; }
   .product-overview-media.zeitpilot-overview-media { min-height: 0; }
