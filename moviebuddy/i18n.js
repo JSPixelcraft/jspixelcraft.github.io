@@ -1,6 +1,7 @@
 (() => {
   const pairs = [
     // Product page
+    ["Zum Inhalt", "Skip to content"],
     ["Die All-in-one-Mediathek für den Mac", "The all-in-one media library for Mac"],
     ["alles, was du gern ansiehst und anhörst", "everything you love to watch and listen to"],
     ["Filme, Serien und Hörbücher an einem Ort: Movie Buddy bringt eigene Dateien, Medienserver und verbundene Dienste in einer übersichtlichen macOS-App zusammen.", "Movies, shows and audiobooks in one place: Movie Buddy brings your own files, media servers and connected services together in one clear macOS app."],
@@ -54,6 +55,12 @@
     ["Hörbücher nach Autoren, Reihen und Kategorien ordnen und über „Weiterhören“ an der gespeicherten Position fortsetzen.", "Organize audiobooks by author, series and category, then continue from your saved position with Continue Listening."],
     ["Profile & iCloud", "Profiles & iCloud"],
     ["Eigener Fortschritt, Favoriten und Sammlungen pro Profil sowie optionaler iCloud-Abgleich ausgewählter persönlicher Daten.", "Separate progress, favorites and collections for each profile, plus optional iCloud sync for selected personal data."],
+    ["Direkt aus dem Mac App Store", "Straight from the Mac App Store"],
+    ["Movie Buddy auf deinem Mac.", "Movie Buddy on your Mac."],
+    ["Echte Ansichten der persönlichen Mediathek, einer Filmdetailseite und der Hörbuchverwaltung aus der veröffentlichten macOS-App.", "Real views of the personal media library, a movie detail page and audiobook management in the released macOS app."],
+    ["Eigene Film- und Serienmediathek übersichtlich organisieren", "Keep your movie and TV library neatly organized"],
+    ["Metadaten prüfen und Filme direkt abspielen", "Review metadata and play movies directly"],
+    ["Hörbücher nach Autoren, Reihen und Sammlungen ordnen", "Organize audiobooks by author, series and collection"],
     ["01 / QUELLEN", "01 / SOURCES"],
     ["Einlesen, ohne deine Ablage umzubauen.", "Import without rebuilding your filing system."],
     ["Ordner, Laufwerke, Medienserver und persönliche Kaufmediatheken lassen sich dort verbinden, wo sie bereits liegen. Movie Buddy führt die sichtbaren Informationen zusammen und zeigt neue Inhalte direkt im passenden Bereich.", "Folders, drives, media servers and personal purchase libraries can be connected right where they already live. Movie Buddy brings the visible information together and shows new content directly in the right area."],
@@ -156,6 +163,7 @@
     ["Online-Abfragen erfolgen nur für die jeweils benötigten Such- und Zuordnungsfunktionen. Trailer- und Untertitelsuchen werden von dir ausgelöst.", "Online requests are made only for the search and matching features you use. Trailer and subtitle searches are initiated by you."],
     ["Metadaten", "Metadata"],
     ["Lokale NFO-Dateien und Bilder, Cinemeta/Stremio,", "Local NFO files and artwork, Cinemeta/Stremio,"],
+    ["(CC BY 2.0 DE) und", "(CC BY 2.0 DE) and"],
     ["und", "and"],
     ["Trailer & Untertitel", "Trailers & subtitles"],
     ["KinoCheck für von dir gestartete Trailersuchen sowie das OpenSubtitles-Community-Addon für von dir gestartete Untertitelsuchen.", "KinoCheck for trailer searches you initiate and the OpenSubtitles community addon for subtitle searches you initiate."],
@@ -164,6 +172,7 @@
     ["Player", "Player"],
     ["und", "and"],
     ["lizenziert unter der", "licensed under"],
+    [", lizenziert unter der", ", licensed under the"],
     ["Unabhängig von genannten Diensten.", "Independent of the services named."],
     ["Movie Buddy ist ein unabhängiges Produkt. Genannte Marken, Dienste und Logos gehören ihren jeweiligen Eigentümern. Eine Nennung bedeutet keine Partnerschaft oder Billigung.", "Movie Buddy is an independent product. All trademarks, services and logos mentioned belong to their respective owners. Mentioning them does not imply a partnership or endorsement."],
     ["Bereit für deine Sammlung", "Ready for your collection"],
