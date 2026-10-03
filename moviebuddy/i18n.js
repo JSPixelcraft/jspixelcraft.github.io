@@ -125,8 +125,8 @@
     ["Autoren, Sprecher, Reihen, Cover und Kapitel ergänzen", "Add authors, narrators, series, covers and chapters"],
     ["Nach Autoren, Reihen und Kategorien durchstöbern", "Browse by author, series and category"],
     ["Eigene Sammlungen und „Weiterhören“ nutzen", "Use custom collections and Continue Listening"],
-    ["Deine Anmeldung bleibt privat", "Your sign-in stays private"],
-    ["Movie Buddy speichert dein Audible-Passwort nicht. Die Wiedergabe von Audible-Titeln verbleibt bei Audible. Metadaten lokaler Hörbücher können auf Wunsch zusätzlich im jeweiligen Hörbuchordner gesichert werden.", "Movie Buddy does not store your Audible password. Audible titles continue to play through Audible. If you choose, metadata for local audiobooks can also be saved in the corresponding audiobook folder."],
+    ["Wiedergabe bleibt bei Audible", "Playback stays with Audible"],
+    ["Movie Buddy liest nach deiner Anmeldung die sichtbaren Informationen deiner persönlichen Audible-Bibliothek ein, speichert aber weder dein Passwort noch Hörbuchdateien. Movie Buddy spielt Audible-Titel nicht selbst ab: Beim Start eines Titels wird die Wiedergabe vollständig von Audible übernommen.", "After you sign in, Movie Buddy imports the visible information from your personal Audible library, but stores neither your password nor audiobook files. Movie Buddy does not play Audible titles itself: when you start a title, playback is handled entirely by Audible."],
     ["06 / SPIELE · COMING SOON", "06 / GAMES · COMING SOON"],
     ["Eine Mediathek für deine Spiele.", "One library for all your games."],
     ["Coming Soon: Movie Buddy wird zur gemeinsamen Heimat für digitale und physische Spiele verschiedener Plattformen – übersichtlich organisiert und mit hilfreichen Details direkt zur Hand.", "Coming Soon: Movie Buddy will become a shared home for digital and physical games across platforms—neatly organized with useful details close at hand."],
@@ -320,7 +320,6 @@
     ["Die Anbieter- und Kontaktangaben findest du im", "Provider and contact details are available in the"],
     ["Impressum", "Legal notice"],
     ["Datenschutz- und Supportanfragen kannst du an", "Privacy and support requests can be sent to"],
-    ["richten.", "."],
     ["2. Lokale Mediathek und Berechtigungen", "2. Local library and permissions"],
     ["Informationen über deine Medien, lokale Speicherorte, Netzwerkquellen, Server, Metadaten, Wiedergabefortschritt, Favoriten, Sammlungen und Profile werden lokal verarbeitet. Movie Buddy verändert oder löscht keine Video- oder NFO-Dateien in deinen Medienordnern. Entfernst du eine Quelle oder setzt du die App zurück, bleiben diese Originaldateien bestehen.", "Information about your media, local storage locations, network sources, servers, metadata, playback progress, favorites, collections and profiles is processed locally. Movie Buddy does not change or delete video or NFO files in your media folders. If you remove a source or reset the app, these original files remain in place."],
     ["Für ausgewählte Funktionen benötigt Movie Buddy von dir erteilte macOS-Berechtigungen, etwa für Dateien, Netzwerkorte oder die Automation der TV-App. Du kannst Systemberechtigungen in den macOS-Einstellungen ändern. Ohne die jeweilige Berechtigung steht die betroffene Funktion nicht oder nur eingeschränkt zur Verfügung.", "Selected features require macOS permissions that you grant, such as access to files, network locations or Automation of the TV app. You can change system permissions in macOS Settings. Without the relevant permission, the affected feature may be unavailable or limited."],
@@ -379,8 +378,8 @@
 
     const metadata = {
       product: {
-        de: ["Movie Buddy ist die All-in-one-Mediathek für Filme, Serien und Hörbücher auf dem Mac. Eine Spielebibliothek ist für ein kommendes Update geplant.", "Movie Buddy – die All-in-one-Mediathek für den Mac", "Filme, Serien und Hörbücher in einer Mediathek organisieren. Spiele folgen mit einem kommenden Update."],
-        en: ["Movie Buddy is the all-in-one media library for movies, shows and audiobooks on Mac. A games library is planned for a future update.", "Movie Buddy – the all-in-one media library for Mac", "Organize movies, shows and audiobooks in one media library. Games will follow in a future update."]
+        de: ["Movie Buddy ist die All-in-one-Mediathek für Filme, Serien und Hörbücher auf dem Mac. Mit einem kommenden Update finden auch Spiele darin ihr Zuhause.", "Movie Buddy – die All-in-one-Mediathek für den Mac", "Filme, Serien und Hörbücher in einer Mediathek organisieren. Mit einem kommenden Update finden auch Spiele darin ihr Zuhause."],
+        en: ["Movie Buddy is the all-in-one media library for movies, shows and audiobooks on Mac. A future update will make it a home for your games as well.", "Movie Buddy – the all-in-one media library for Mac", "Organize movies, shows and audiobooks in one media library. A future update will make it a home for your games as well."]
       },
       support: {
         de: ["Hilfe, Anleitungen und häufige Fragen zu Movie Buddy für macOS."],
