@@ -134,6 +134,9 @@
     document.querySelectorAll("[data-de-label][data-en-label]").forEach((element) => {
       element.setAttribute("aria-label", element.dataset[`${language}Label`]);
     });
+    document.querySelectorAll("[data-de-alt][data-en-alt]").forEach((element) => {
+      element.setAttribute("alt", element.dataset[`${language}Alt`]);
+    });
   }
 
   function setLanguage(language) {
