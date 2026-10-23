@@ -1199,6 +1199,30 @@ body[data-theme="zeitpilot"] .product-overview-copy h2 { font-size: clamp(2.15re
 .moviebuddy-credit h3 { margin-bottom: 7px; font-size: 1rem; }
 .moviebuddy-credit p { margin: 0; color: var(--muted); font-size: .9rem; }
 .moviebuddy-credit a { color: var(--accent); }
+
+/* Collection Buddy */
+.collectionbuddy-hero { grid-template-columns: minmax(360px, .72fr) minmax(620px, 1.28fr); align-items: center; gap: clamp(42px, 6vw, 96px); }
+.collectionbuddy-hero .hero-copy { max-width: 680px; }
+.collectionbuddy-hero-screen { width: min(920px, 66vw); margin-right: min(-9vw, -72px); }
+.collectionbuddy-screen { overflow: hidden; margin: 0; padding: 6px; border: 1px solid rgba(181, 214, 255, .22); border-radius: 22px; background: rgba(255,255,255,.035); box-shadow: 0 30px 80px rgba(0,0,0,.38); }
+.collectionbuddy-screen img { display: block; width: 100%; height: auto; border-radius: 16px; }
+.collectionbuddy-media-bar { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: rgba(255,255,255,.018); }
+.collectionbuddy-media-list { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); }
+.collectionbuddy-media-list span { padding: 22px 12px; border-right: 1px solid var(--line); color: var(--muted); font-size: .78rem; font-weight: 720; letter-spacing: .06em; text-align: center; text-transform: uppercase; }
+.collectionbuddy-media-list span:last-child { border-right: 0; }
+.collectionbuddy-jump { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+.collectionbuddy-functions-intro { padding-bottom: 28px; }
+.collectionbuddy-feature-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.collectionbuddy-feature { min-width: 0; padding: 26px; border: 1px solid var(--line); border-radius: var(--radius-md); background: rgba(255,255,255,.025); }
+.collectionbuddy-feature > span { display: block; margin-bottom: 24px; color: var(--accent); font-size: 11px; font-weight: 760; letter-spacing: .14em; }
+.collectionbuddy-feature h3 { margin-bottom: 9px; font-size: 1.08rem; }
+.collectionbuddy-feature p { margin: 0; color: var(--muted); font-size: .92rem; }
+.collectionbuddy-feature-grid-spaced { margin-top: 26px; }
+.collectionbuddy-shot-stack { display: grid; gap: 24px; }
+.collectionbuddy-checks { margin-top: 28px; }
+.collectionbuddy-price-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.collectionbuddy-price-grid .product-panel { height: 100%; }
+.collectionbuddy-full-version { border-color: color-mix(in srgb, var(--accent) 46%, var(--line)); background: linear-gradient(145deg, color-mix(in srgb, var(--accent) 9%, transparent), rgba(255,255,255,.025)); }
 .support-search { margin-bottom: 26px; }
 .support-search label { display: block; margin-bottom: 9px; color: var(--muted); font-size: 13px; font-weight: 650; }
 .support-search input { width: 100%; min-height: 52px; padding: 12px 16px; border: 1px solid var(--line); border-radius: 12px; outline: 0; background: rgba(255,255,255,.045); color: var(--text); font: inherit; }
@@ -1229,6 +1253,12 @@ body[data-theme="zeitpilot"] .product-overview-copy h2 { font-size: clamp(2.15re
   .zeitpilot-gallery-heading > p { max-width: 720px; }
   .moviebuddy-gallery-heading { grid-template-columns: 1fr; }
   .moviebuddy-gallery-heading > p { max-width: 720px; }
+  .collectionbuddy-hero { grid-template-columns: 1fr; }
+  .collectionbuddy-hero-screen { width: 100%; margin-right: 0; }
+  .collectionbuddy-media-list { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .collectionbuddy-media-list span:nth-child(4) { border-right: 0; }
+  .collectionbuddy-media-list span:nth-child(-n+4) { border-bottom: 1px solid var(--line); }
+  .collectionbuddy-jump { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .zeitpilot-gallery { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: minmax(230px, 31vw); overflow-x: auto; padding: 4px 2px 24px; scroll-snap-type: x mandatory; scrollbar-color: color-mix(in srgb, var(--accent-2) 40%, transparent) transparent; }
   .zeitpilot-gallery figure { scroll-snap-align: start; }
   .product-story-copy { position: static; }
@@ -1264,6 +1294,14 @@ body[data-theme="zeitpilot"] .product-overview-copy h2 { font-size: clamp(2.15re
   .zeitpilot-gallery { grid-auto-columns: minmax(235px, 78vw); gap: 12px; margin-right: -14px; }
   .moviebuddy-gallery-heading { gap: 20px; margin-bottom: 34px; }
   .moviebuddy-gallery { grid-template-columns: 1fr; gap: 30px; }
+  .collectionbuddy-screen { padding: 4px; border-radius: 16px; }
+  .collectionbuddy-screen img { border-radius: 11px; }
+  .collectionbuddy-media-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .collectionbuddy-media-list span, .collectionbuddy-media-list span:nth-child(4) { border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .collectionbuddy-media-list span:nth-child(2n) { border-right: 0; }
+  .collectionbuddy-media-list span:nth-last-child(-n+2) { border-bottom: 0; }
+  .collectionbuddy-jump, .collectionbuddy-feature-grid, .collectionbuddy-price-grid { grid-template-columns: 1fr; }
+  .collectionbuddy-feature { padding: 22px; }
   .product-overview-media { min-height: 390px; padding: 18px; }
   .product-overview-media > img { max-height: 350px; }
   .product-overview-media.zeitpilot-overview-media { min-height: 0; }

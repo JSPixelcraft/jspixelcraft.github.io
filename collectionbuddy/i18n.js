@@ -377,8 +377,8 @@
 
     const metadata = {
       product: {
-        de: ["Collection Buddy verwaltet Filme, Serien, Hörbücher, E-Books und Spiele in einer übersichtlichen macOS-App.", "Collection Buddy – die All-in-one-Mediathek für den Mac", "Filme, Serien, Hörbücher, E-Books und Spiele an einem Ort organisieren, lesen und wiedergeben."],
-        en: ["Collection Buddy manages movies, shows, audiobooks, e-books and games in one clear macOS app.", "Collection Buddy – the all-in-one media library for Mac", "Organize, read and play movies, shows, audiobooks, e-books and games in one place."]
+        de: ["Collection Buddy vereint Filme, Serien, Hörbücher, Musik, Karaoke, Spiele, E-Books und Comics in einer übersichtlichen macOS-App.", "Collection Buddy – deine gesamte Mediathek auf dem Mac", "Filme, Serien, Hörbücher, Musik, Karaoke, Spiele, E-Books und Comics in einer App verwalten, wiedergeben und lesen."],
+        en: ["Collection Buddy brings movies, shows, audiobooks, music, karaoke, games, e-books and comics together in one clear macOS app.", "Collection Buddy – your complete media library on Mac", "Manage, play and read movies, shows, audiobooks, music, karaoke, games, e-books and comics in one app."]
       },
       support: {
         de: ["Hilfe, Anleitungen und häufige Fragen zu Collection Buddy für macOS."],

@@ -137,6 +137,10 @@
     document.querySelectorAll("[data-de-alt][data-en-alt]").forEach((element) => {
       element.setAttribute("alt", element.dataset[`${language}Alt`]);
     });
+
+  document.querySelectorAll("[data-de-src][data-en-src]").forEach((element) => {
+    element.setAttribute("src", element.dataset[`${language}Src`]);
+  });
   }
 
   function setLanguage(language) {
