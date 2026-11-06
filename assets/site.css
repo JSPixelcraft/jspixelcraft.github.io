@@ -473,7 +473,7 @@ body[data-page="product"] .hero + .product-facts { margin-top: -34px; margin-bot
 .product-facts > div:last-child { border-right: 0; }
 .product-facts span { margin-bottom: 2px; color: var(--muted); font-size: 11px; font-weight: 650; letter-spacing: .08em; text-transform: uppercase; }
 .product-facts strong { font-size: 14px; font-weight: 650; }
-.product-facts small { margin-top: 4px; color: var(--muted); font-size: 12px; line-height: 1.35; }
+.product-facts > .product-facts-availability { grid-column: 1 / -1; min-height: 68px; padding-left: 0; border-top: 1px solid var(--line); border-right: 0; }
 body[data-page="product"] .hero-art { min-height: 390px; border: 1px solid var(--line); border-radius: var(--radius-xl); background: var(--surface); }
 body[data-page="product"] .hero-art::after { position: absolute; inset: 24px; border: 1px solid rgba(255,255,255,.06); border-radius: 14px; content: ""; pointer-events: none; }
 body[data-page="product"] .section-heading { display: grid; max-width: none; grid-template-columns: minmax(180px,.65fr) minmax(0,1.6fr); column-gap: 48px; }
@@ -676,6 +676,7 @@ body[data-theme="kassenanker"] .hero-art .app-icon {
   body[data-page="product"] .grid-3 .card-icon { top: 27px; left: 20px; }
   .product-facts { grid-template-columns: 1fr; }
   .product-facts > div { min-height: 72px; padding: 14px 0; border-right: 0; border-bottom: 1px solid var(--line); }
+  .product-facts > .product-facts-availability { grid-column: auto; border-top: 0; }
   .product-facts > div:last-child { border-bottom: 0; }
   .page-intro { padding: 62px 0 36px; }
   .aside-nav { display: none; }

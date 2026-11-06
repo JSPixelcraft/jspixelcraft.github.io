@@ -191,16 +191,17 @@
       const platform = body.dataset.platform || "iPhone / iPad";
       const developmentDe = body.dataset.developmentDe || "Native für iOS";
       const developmentEn = body.dataset.developmentEn || "Native for iOS";
-      const companionDe = body.dataset.companionDe || "";
-      const companionEn = body.dataset.companionEn || "";
+      const availabilityDe = body.dataset.availabilityDe || "";
+      const availabilityEn = body.dataset.availabilityEn || "";
       const privacyDe = body.dataset.privacyDe || "Bewusst konzipiert";
       const privacyEn = body.dataset.privacyEn || "Built in by design";
       const productFacts = document.createElement("div");
       productFacts.className = "product-facts";
       productFacts.innerHTML = `
         <div><span data-de="Plattform" data-en="Platform">Plattform</span><strong>${platform}</strong></div>
-        <div><span data-de="Entwicklung" data-en="Development">Entwicklung</span><strong data-de="${developmentDe}" data-en="${developmentEn}">${developmentDe}</strong>${companionDe ? `<small data-de="${companionDe}" data-en="${companionEn}">${companionDe}</small>` : ""}</div>
-        <div><span data-de="Datenschutz" data-en="Privacy">Datenschutz</span><strong data-de="${privacyDe}" data-en="${privacyEn}">${privacyDe}</strong></div>`;
+        <div><span data-de="Entwicklung" data-en="Development">Entwicklung</span><strong data-de="${developmentDe}" data-en="${developmentEn}">${developmentDe}</strong></div>
+        <div><span data-de="Datenschutz" data-en="Privacy">Datenschutz</span><strong data-de="${privacyDe}" data-en="${privacyEn}">${privacyDe}</strong></div>
+        ${availabilityDe ? `<div class="product-facts-availability"><span data-de="Auch erhältlich" data-en="Also available">Auch erhältlich</span><strong data-de="${availabilityDe}" data-en="${availabilityEn}">${availabilityDe}</strong></div>` : ""}`;
       heroContainer.append(productFacts);
     }
 
